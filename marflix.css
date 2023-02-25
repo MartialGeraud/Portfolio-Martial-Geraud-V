@@ -1,1 +1,45 @@
-/*# sourceMappingURL=marflix.css.map */
+* {
+  margin: 0;
+}
+* body {
+  background-color: black;
+}
+* body .idk nav {
+  width: 90%;
+  height: 75px;
+  background-color: #232121;
+  border-radius: 10px;
+  margin-left: 5%;
+  margin-top: 5px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+* body .idk nav h2 {
+  color: white;
+  margin-left: 5%;
+  font-size: 28px;
+}
+* body .idk nav h2 span {
+  color: red;
+}
+* body .idk nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px;
+}
+* body .idk nav ul li a {
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+* body .idk nav button {
+  background-color: red;
+  margin-right: 5%;
+}
+* body .idk nav button a {
+  color: white;
+  text-decoration: none;
+}/*# sourceMappingURL=marflix.css.map */
