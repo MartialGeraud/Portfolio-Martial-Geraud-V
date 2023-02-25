@@ -4,16 +4,24 @@
   font-family: 'Cambo', serif;
 
   body {
-    
-    .idk {
+      
+      .idk {
+        margin-top: 0;
+        height: 400vh;
+        background-image: url(/images/stylo.jpg) ;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 100%;
+        margin-top:  0px;
+        
         nav {
           width: 90%;
           height: 60px;
-          background-color: rgba($color: #232121e4, $alpha: 1.0);
-          
+          background-color: rgba($color: #232121e4, $alpha: 1.0); 
           border-radius: 10px;
           margin-left: 5%;
-          margin-top: 5px;
+          top:5px;
+          position: absolute;        
           padding: 5px;
           display: flex;
           align-items: center;
