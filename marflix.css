@@ -6,7 +6,7 @@
 }
 * body .idk nav {
   width: 90%;
-  height: 75px;
+  height: 60px;
   background-color: #232121;
   border-radius: 10px;
   margin-left: 5%;
@@ -17,12 +17,19 @@
   justify-content: space-between;
 }
 * body .idk nav h2 {
-  color: white;
-  margin-left: 5%;
-  font-size: 28px;
+  margin-left: 3%;
 }
-* body .idk nav h2 span {
-  color: red;
+* body .idk nav h2 a {
+  color: white;
+  font-size: 28px;
+  text-decoration: none;
+}
+* body .idk nav h2 a span {
+  color: aqua;
+}
+* body .idk nav ul {
+  margin-right: 3%;
+  cursor: default;
 }
 * body .idk nav ul li {
   list-style-type: none;
@@ -34,12 +41,9 @@
   color: white;
   text-decoration: none;
   font-weight: bold;
+  cursor: pointer;
 }
-* body .idk nav button {
-  background-color: red;
-  margin-right: 5%;
-}
-* body .idk nav button a {
-  color: white;
-  text-decoration: none;
+* body .idk nav ul li a:hover {
+  color: aqua;
+  transition: 1s;
 }/*# sourceMappingURL=marflix.css.map */
