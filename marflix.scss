@@ -6,7 +6,7 @@
     .idk {
         nav {
           width: 90%;
-          height: 75px;
+          height: 60px;
           background-color: rgba($color: #232121e4, $alpha: 1.0);
           
           border-radius: 10px;
@@ -16,16 +16,23 @@
           display: flex;
           align-items: center;
           justify-content: space-between;
-        h2 {
-            color: white;
-            margin-left: 5%;
-            font-size: 28px;
-            span{
-                color: red;
+          h2 {
+            margin-left: 3%;
+            a{
+                color: white;
+                font-size: 28px;
+                text-decoration: none;
+                
+                span{
+                    color: aqua;
+                }
             }
         }  
 
         ul {
+            margin-right: 3%;
+            
+            cursor: default;
           
           li {
             
@@ -34,24 +41,25 @@
             padding: 10px;
             
             
+            
+            
             a{
                 font-size: 22px;
                 color: white;
                 text-decoration: none;
                 font-weight: bold;
+                cursor: pointer;
+                &:hover{
+                    color: aqua;
+                    transition: 1s;
+
+                }
             }
           }
         }
-        button{
-            background-color: red;
-            margin-right: 5%;
-            a{
-                color: white;
-                text-decoration: none;
-
-            }
+       
         }
-      }
+      
     }
   }
 }
