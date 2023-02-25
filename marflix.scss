@@ -4,7 +4,7 @@
   font-family: 'Cambo', serif;
 
   body {
-    background-color: black;
+    
     .idk {
         nav {
           width: 90%;
@@ -20,6 +20,8 @@
           justify-content: space-between;
           h2 {
             margin-left: 3%;
+            
+            
             a{
                 background: linear-gradient(to left , white 35%, aqua 50% , white 70% );
                 color: white;
@@ -38,9 +40,10 @@
                 font-size: 28px;
                 text-decoration: none;
                 font-weight: bold;
+                transition: all 1s;
                 &:hover{
-                    font-size: 36px;
-                    transition: 1s;
+                    font-size: 38px;
+                    
                 }
 
                 
@@ -68,10 +71,11 @@
                 text-decoration: none;
                 font-weight: bold;
                 cursor: pointer;
+                transition: all 1s;
                 &:hover{
                     color: aqua;
-                    transition: 1s;
-                    font-size: 32px;
+                    
+                    font-size: 34px;
                 }
             }
           }

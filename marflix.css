@@ -3,9 +3,6 @@
   margin: 0;
   font-family: "Cambo", serif;
 }
-* body {
-  background-color: black;
-}
 * body .idk nav {
   width: 90%;
   height: 60px;
@@ -32,6 +29,7 @@
   font-size: 28px;
   text-decoration: none;
   font-weight: bold;
+  transition: all 1s;
 }
 @keyframes shine {
   to {
@@ -39,8 +37,7 @@
   }
 }
 * body .idk nav h2 a:hover {
-  font-size: 36px;
-  transition: 1s;
+  font-size: 38px;
 }
 * body .idk nav ul {
   margin-right: 3%;
@@ -57,9 +54,9 @@
   text-decoration: none;
   font-weight: bold;
   cursor: pointer;
+  transition: all 1s;
 }
 * body .idk nav ul li a:hover {
   color: aqua;
-  transition: 1s;
-  font-size: 32px;
+  font-size: 34px;
 }/*# sourceMappingURL=marflix.css.map */
