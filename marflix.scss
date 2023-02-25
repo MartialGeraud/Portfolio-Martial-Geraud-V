@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Cambo&display=swap');
 * {
   margin: 0;
+  font-family: 'Cambo', serif;
 
   body {
     background-color: black;
@@ -19,13 +21,30 @@
           h2 {
             margin-left: 3%;
             a{
+                background: linear-gradient(to left , white 35%, aqua 50% , white 70% );
                 color: white;
+                background-size: 200%;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            
+                animation: shine 1s linear infinite;
+                @keyframes shine {
+                    to {
+                        background-position:  150% ;
+                    }
+                    
+                }
+                
                 font-size: 28px;
                 text-decoration: none;
-                
-                span{
-                    color: aqua;
+                font-weight: bold;
+                &:hover{
+                    font-size: 36px;
+                    transition: 1s;
                 }
+
+                
+                
             }
         }  
 
@@ -52,7 +71,7 @@
                 &:hover{
                     color: aqua;
                     transition: 1s;
-
+                    font-size: 32px;
                 }
             }
           }

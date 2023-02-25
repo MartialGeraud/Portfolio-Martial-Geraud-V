@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Cambo&display=swap");
 * {
   margin: 0;
+  font-family: "Cambo", serif;
 }
 * body {
   background-color: black;
@@ -20,12 +22,25 @@
   margin-left: 3%;
 }
 * body .idk nav h2 a {
+  background: linear-gradient(to left, white 35%, aqua 50%, white 70%);
   color: white;
+  background-size: 200%;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 1s linear infinite;
   font-size: 28px;
   text-decoration: none;
+  font-weight: bold;
 }
-* body .idk nav h2 a span {
-  color: aqua;
+@keyframes shine {
+  to {
+    background-position: 150%;
+  }
+}
+* body .idk nav h2 a:hover {
+  font-size: 36px;
+  transition: 1s;
 }
 * body .idk nav ul {
   margin-right: 3%;
@@ -46,4 +61,5 @@
 * body .idk nav ul li a:hover {
   color: aqua;
   transition: 1s;
+  font-size: 32px;
 }/*# sourceMappingURL=marflix.css.map */
