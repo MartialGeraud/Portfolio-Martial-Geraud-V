@@ -77,7 +77,6 @@
   left: 7.5%;
   background-color: rgba(94, 90, 90, 0.6);
   width: 45%;
-  height: 27%;
   text-align: center;
   padding-top: 30px;
   border-radius: 4px;
@@ -97,6 +96,7 @@
 * body .idk div p.test {
   margin-top: 22px;
   font-size: 20px;
+  margin-bottom: 30px;
 }
 * body .idk div span {
   color: aqua;
@@ -108,11 +108,97 @@
 }
 @keyframes slidein {
   from {
-    margin-left: 100%;
-    width: 300%;
+    margin-left: 70%;
+    width: 0%;
   }
   to {
     margin-left: 0%;
     width: 100%;
   }
+}
+* body .contact {
+  background-color: #3b3939;
+  width: 100%;
+  height: 200px;
+  padding-top: 10px;
+}
+* body .contact h1 {
+  text-align: center;
+}
+* body .contact h1 a {
+  background: linear-gradient(to left, white 35%, aqua 50%, white 70%);
+  color: white;
+  background-size: 200%;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine2 1s linear infinite;
+  font-size: 28px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 1s;
+  cursor: default;
+}
+@keyframes shine2 {
+  to {
+    background-position: 150%;
+  }
+}
+* body .contact .logoc {
+  border: 3px solid white;
+  width: 80%;
+  margin-left: 10%;
+  border-radius: 10px;
+  margin-top: 10px;
+  text-align: center;
+  height: 110px;
+  align-content: center;
+}
+* body .contact .logoc ul {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+* body .contact .logoc ul li {
+  display: inline;
+  text-decoration: none;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+* body .contact .logoc ul li a {
+  text-decoration: none;
+}
+* body .contact .logoc ul li a img {
+  transition: all 1s;
+}
+* body .contact .logoc ul li a img.linkedin {
+  width: 6%;
+}
+* body .contact .logoc ul li a img.linkedin:hover {
+  width: 7%;
+  margin-top: 10px;
+}
+* body .contact .logoc ul li a img.github {
+  width: 6%;
+}
+* body .contact .logoc ul li a img.github:hover {
+  width: 8%;
+}
+* body .contact .logoc ul li a img.gitlab {
+  width: 6%;
+}
+* body .contact .logoc ul li a img.gitlab:hover {
+  width: 7%;
+  margin-top: 10px;
+}
+* body .contact .logoc ul li a img.email {
+  width: 6%;
+}
+* body .contact .logoc ul li a img.email:hover {
+  width: 8%;
+}
+* body .contact .logoc ul li a img.tel {
+  width: 7%;
+}
+* body .contact .logoc ul li a img.tel:hover {
+  width: 8%;
 }/*# sourceMappingURL=marflix.css.map */
