@@ -1,0 +1,16 @@
+        /* animation-duration: 3s;
+        animation-name: slidein;
+        animation-iteration-count: 1;
+        
+        @keyframes slidein {
+            from {
+              margin-left: 0%;
+              width: 100%;
+            }
+    
+            to {
+              margin-left: 50%;
+              width: 100%;
+            }
+          }
+        } */
