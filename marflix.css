@@ -2,6 +2,7 @@
 * {
   margin: 0;
   font-family: "Cambo", serif;
+  scroll-behavior: smooth;
 }
 * body .idk {
   margin-top: 0;
@@ -65,15 +66,31 @@
   font-weight: bold;
   cursor: pointer;
   transition: all 1s;
+  position: relative;
+  /* Style pour le texte sur hover */
 }
 * body .idk nav ul li a:hover {
   color: aqua;
   font-size: 34px;
 }
-* body .idk div {
+* body .idk nav ul li a::after {
+  content: "";
+  background: aqua;
+  height: 2px;
+  position: absolute;
+  width: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease-in-out;
+}
+* body .idk nav ul li a:hover::after {
+  width: 100%;
+}
+* body .idk .present {
   color: white;
   position: absolute;
-  top: 25%;
+  top: 28%;
   left: 7.5%;
   background-color: rgba(94, 90, 90, 0.6);
   width: 45%;
@@ -81,49 +98,101 @@
   padding-top: 30px;
   border-radius: 4px;
 }
-* body .idk div p.pres {
+* body .idk .present p.pres {
   font-size: 32px;
 }
-* body .idk div p.nom {
+* body .idk .present p.nom {
   font-size: 54px;
   margin-top: 10px;
   color: white;
 }
-* body .idk div p.met {
+* body .idk .present p.met {
   font-size: 32px;
   margin-top: 15px;
 }
-* body .idk div p.test {
+* body .idk .present p.test {
   margin-top: 22px;
   font-size: 20px;
   margin-bottom: 30px;
 }
-* body .idk div span {
+* body .idk .present span {
   color: aqua;
 }
-* body .about h1 {
-  animation-duration: 3s;
-  animation-name: slidein;
-  animation-iteration-count: 1;
+* body .idk .bitmojie {
+  position: absolute;
+  top: 18%;
+  left: 60%;
+  width: 30%;
 }
-@keyframes slidein {
-  from {
-    margin-left: 70%;
-    width: 0%;
-  }
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
+* body .about {
+  height: 800px;
+  background-color: rgb(225, 231, 237);
+  padding-top: 50px;
+}
+* body .about h1 {
+  font-size: 50px;
+  text-align: center;
+  color: #3b3939;
+}
+* body .techno {
+  height: 800px;
+  background-color: rgb(225, 231, 237);
+  padding-top: 10px;
+}
+* body .techno h1 {
+  font-size: 50px;
+  text-align: center;
+  color: #3b3939;
+}
+* body .techno h2 {
+  text-align: center;
+}
+* body .techno h3 {
+  text-align: center;
+}
+* body .techno .languages {
+  display: flex;
+  justify-content: center;
+}
+* body .techno .languages .element {
+  background-color: white;
+  width: 15%;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  margin: 10px 5% 0 0;
+  border-radius: 5px;
+}
+* body .techno .languages .element .img {
+  justify-content: center;
+  height: 40px;
+  border-right: 2px solid rgb(193, 187, 187);
+}
+* body .techno .languages .element .img img {
+  height: 40px;
+}
+* body .techno .languages .element .explain p {
+  margin: 10px;
+}
+* body .proj {
+  height: 800px;
+  background-color: rgb(225, 231, 237);
+  padding-top: 10px;
+}
+* body .proj h1 {
+  font-size: 50px;
+  text-align: center;
+  color: #3b3939;
 }
 * body .contact {
   background-color: #3b3939;
   width: 100%;
   height: 200px;
-  padding-top: 10px;
+  padding-top: 8px;
 }
 * body .contact h1 {
   text-align: center;
+  font-size: 46px;
 }
 * body .contact h1 a {
   background: linear-gradient(to left, white 35%, aqua 50%, white 70%);
@@ -151,8 +220,7 @@
   border-radius: 10px;
   margin-top: 10px;
   text-align: center;
-  height: 110px;
-  align-content: center;
+  height: 90px;
 }
 * body .contact .logoc ul {
   margin-bottom: 10px;

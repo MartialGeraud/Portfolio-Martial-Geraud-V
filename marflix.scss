@@ -3,6 +3,8 @@
 * {
   margin: 0;
   font-family: "Cambo", serif;
+  scroll-behavior: smooth;
+ 
 
   body {
     .idk {
@@ -77,21 +79,40 @@
               font-weight: bold;
               cursor: pointer;
               transition: all 1s;
+              position: relative;
 
               &:hover {
                 color: aqua;
+                
+                
 
                 font-size: 34px;
+              }
+              &::after {
+                content: "";
+                background: aqua;
+                height: 2px;
+                position: absolute;
+                width: 0;             
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                transition: width 0.3s ease-in-out;
+              }
+              
+              /* Style pour le texte sur hover */
+              &:hover::after {
+                width: 100%;
               }
             }
           }
         }
       }
 
-      div {
+      .present {
         color: white;
         position: absolute;
-        top: 25%;
+        top: 28%;
         left: 7.5%;
         background-color: rgba($color: #5e5a5a, $alpha: 0.6);
         width: 45%;
@@ -124,36 +145,90 @@
           color: aqua;
         }
       }
+      .bitmojie{
+        position: absolute;
+        top: 18%;
+        left: 60%;
+        width: 30%;
+      
+      }
     }
 
     .about {
+      height: 800px;
+      background-color: rgb(225, 231, 237);
+      padding-top: 50px;
       h1 {
-        animation-duration: 3s;
-        animation-name: slidein;
-        animation-iteration-count: 1;
+        font-size: 50px;
+        text-align: center;
+        color: rgba($color: #3b3939, $alpha: 1);;
       }
+    }
+    .techno {
+      height: 800px;
+      background-color: rgb(225, 231, 237);
+      padding-top: 10px;
+      h1 {
+        font-size: 50px;
+        text-align: center;
+        color: rgba($color: #3b3939, $alpha: 1);;
+      }
+      h2 {
+        text-align: center;
+      }
+      h3 {
+        text-align: center;
+      }
+      .languages{
+        display: flex;
+        justify-content: center;
+        
 
-      @keyframes slidein {
-        from {
-          margin-left: 70%;
-          width: 0%;
+        .element{
+          background-color: white;
+          width: 15%;
+          display: flex;
+          align-items: center;
+          height: 40px;
+          margin: 10px 5% 0 0 ;
+          border-radius: 5px;
+          .img {
+            justify-content: center;
+            height: 40px;
+            border-right: 2px solid rgb(193, 187, 187) ;
+            img{
+              height: 40px;
+            }
+          }
+          .explain{
+            
+            p{
+              margin: 10px;
+            }
+          }
         }
-
-        to {
-          margin-left: 0%;
-          width: 100%;
-        }
+      }
+    }
+    .proj {
+      height: 800px;
+      background-color: rgb(225, 231, 237);
+      padding-top: 10px ;
+      h1 {
+        font-size: 50px;
+        text-align: center;
+        color: rgba($color: #3b3939, $alpha: 1);
       }
     }
     .contact {
       background-color: rgba($color: #3b3939, $alpha: 1);
       width: 100%;
       height: 200px;
-      padding-top: 10px;
+      padding-top: 8px;
 
       h1 {
         text-align: center;
-        
+        font-size: 46px;
+
         a {
           background: linear-gradient(to left, white 35%, aqua 50%, white 70%);
           color: white;
@@ -182,52 +257,53 @@
         border-radius: 10px;
         margin-top: 10px;
         text-align: center;
-        height: 110px;
-        align-content: center;
+        height: 90px;
+        
         ul {
           margin-bottom: 10px;
-          
+        
+
           margin-top: 10px;
           li {
             display: inline;
             text-decoration: none;
-           
+
             margin-left: 5%;
             margin-right: 5%;
-            
+
             a {
               text-decoration: none;
               img {
                 transition: all 1s;
                 &.linkedin {
                   width: 6%;
-                  &:hover{
+                  &:hover {
                     width: 7%;
                     margin-top: 10px;
                   }
                 }
                 &.github {
                   width: 6%;
-                  &:hover{
+                  &:hover {
                     width: 8%;
                   }
                 }
                 &.gitlab {
                   width: 6%;
-                  &:hover{
+                  &:hover {
                     width: 7%;
                     margin-top: 10px;
                   }
                 }
-                &.email{
+                &.email {
                   width: 6%;
-                  &:hover{
+                  &:hover {
                     width: 8%;
                   }
                 }
                 &.tel {
                   width: 7%;
-                  &:hover{
+                  &:hover {
                     width: 8%;
                   }
                 }
