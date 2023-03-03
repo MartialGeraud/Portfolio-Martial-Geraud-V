@@ -160,7 +160,7 @@
       }
       .block {
         display: flex;
-        margin-top: 10px;
+        margin-top: 30px;
         
         
         .desc {
@@ -168,12 +168,45 @@
           width: 50%;
           height: 650px;
           border-right: 1px solid #1f1f1f;
+          display: flex;
+          justify-content: center;
+          .description {
+              width: 80%;
+              height: 600px;
+              
+              border: 3px solid aqua;
+              border-radius: 10px;
+              padding: 20px;
+              h1 {
+                font-size: 38px;
+              }
+              p{
+                margin-top: 25px;
+              }
+              
+
+          }
         }
         .Cv {
           
           width: 50%;
           height: 650px;
-          border-left: 1px solid #1f1f1f; /* ajouter une ligne continue noire à gauche */
+          border-left: 1px solid #1f1f1f; 
+          display: flex;
+          justify-content: center;
+  
+          .contentcv {
+              width: 60%;
+              height: 600px;
+              
+              border: 3px solid aqua;
+              border-radius: 10px;
+              padding: 20px;
+              
+              text-align:center;
+              a{
+              }
+          }
         }
        
       }
