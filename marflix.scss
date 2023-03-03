@@ -152,10 +152,30 @@
       height: 800px;
       background-color: rgb(225, 231, 237);
       padding-top: 50px;
+
       h1 {
         font-size: 50px;
         text-align: center;
         color: rgba($color: #3b3939, $alpha: 1);
+      }
+      .block {
+        display: flex;
+        margin-top: 10px;
+        
+        
+        .desc {
+          
+          width: 50%;
+          height: 650px;
+          border-right: 1px solid #1f1f1f;
+        }
+        .Cv {
+          
+          width: 50%;
+          height: 650px;
+          border-left: 1px solid #1f1f1f; /* ajouter une ligne continue noire à gauche */
+        }
+       
       }
     }
     .techno {
