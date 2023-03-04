@@ -6,7 +6,7 @@
 }
 * body .idk {
   margin-top: 0;
-  height: 90vh;
+  height: 100vh;
   background-image: url(/images/stylo.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -90,7 +90,7 @@
 * body .idk .present {
   color: white;
   position: absolute;
-  top: 28%;
+  top: 35%;
   left: 7.5%;
   background-color: rgba(94, 90, 90, 0.6);
   width: 45%;
@@ -120,14 +120,14 @@
 }
 * body .idk .bitmojie {
   position: absolute;
-  top: 18%;
+  top: 20%;
   left: 60%;
   width: 30%;
 }
 * body .about {
-  height: 800px;
+  height: 1000px;
   background-color: rgb(225, 231, 237);
-  padding-top: 50px;
+  padding-top: 100px;
 }
 * body .about h1 {
   font-size: 50px;
@@ -140,13 +140,13 @@
 }
 * body .about .block .desc {
   width: 50%;
-  height: 650px;
+  height: 750px;
   border-right: 1px solid #1f1f1f;
   display: flex;
   justify-content: center;
 }
 * body .about .block .desc .description {
-  width: 80%;
+  width: 60%;
   height: 600px;
   border: 3px solid aqua;
   border-radius: 10px;
@@ -160,23 +160,45 @@
 }
 * body .about .block .Cv {
   width: 50%;
-  height: 650px;
+  height: 750px;
   border-left: 1px solid #1f1f1f;
   display: flex;
   justify-content: center;
 }
 * body .about .block .Cv .contentcv {
   width: 60%;
-  height: 600px;
+  height: 650px;
   border: 3px solid aqua;
   border-radius: 10px;
-  padding: 20px;
   text-align: center;
 }
+* body .about .block .Cv .contentcv .moncv {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+* body .about .block .Cv .contentcv .moncv img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+* body .about .block .Cv .contentcv a button {
+  margin-top: 30px;
+  border-radius: 30px;
+  font-size: 20px;
+  padding: 10px;
+  background-image: linear-gradient(to right, #1db0dc, #23d0d3);
+  color: white;
+  border: #1db0dc;
+  transition: all 3s;
+}
+* body .about .block .Cv .contentcv a button:hover {
+  background: linear-gradient(to left, #1db0dc, #23d0d3);
+}
 * body .techno {
-  height: 1000px;
+  height: 1100px;
   background-color: rgb(225, 231, 237);
-  padding-top: 10px;
+  padding-top: 50px;
 }
 * body .techno h1 {
   font-size: 50px;
@@ -207,6 +229,19 @@
   border-radius: 5px;
   flex-wrap: nowrap;
   margin-top: 20px;
+  transition: transform 0.5s ease-in-out;
+}
+* body .techno .languages .element:hover {
+  transform-style: preserve-3d;
+  transform: rotateY(360deg);
+}
+@keyframes rotate {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
 }
 * body .techno .languages .element .img {
   justify-content: center;
@@ -219,12 +254,67 @@
 * body .techno .languages .element .explain {
   display: flex;
   align-items: center;
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 * body .techno .languages .element .explain p {
   margin: 10px;
 }
 * body .techno .languages .diff {
   width: 200px;
+}
+* body .techno .languages .yellow {
+  background-color: rgb(255, 255, 43);
+}
+* body .techno .languages .blue {
+  background-color: rgb(174, 174, 252);
+  color: white;
+}
+* body .techno .languages .pink {
+  background-color: rgb(254, 218, 224);
+}
+* body .techno .languages .purple {
+  background-color: rgb(245, 181, 245);
+}
+* body .techno .languages .green {
+  background-color: rgb(2, 255, 2);
+}
+* body .techno .languages .black {
+  background-color: rgb(61, 61, 61);
+  color: white;
+}
+* body .techno .languages .php {
+  background-color: #6970b4;
+  color: white;
+}
+* body .techno .languages .orange1 {
+  background-color: orange;
+}
+* body .techno .languages .orange2 {
+  background-color: rgb(254, 209, 126);
+}
+* body .techno .languages .orange3 {
+  background-color: rgb(255, 202, 104);
+}
+* body .techno .languages .red {
+  background-color: rgb(197, 1, 1);
+  color: white;
+}
+* body .techno .languages .gray {
+  background-color: #5e5a5a;
+  color: white;
+}
+* body .techno .languages .gray2 {
+  background-color: #c4c4c4;
+}
+* body .techno .languages .eclipse {
+  background-color: #2c2255;
+  color: white;
+}
+* body .techno .languages .smoke {
+  background-color: rgb(231, 171, 171);
 }
 * body .proj {
   height: 800px;
@@ -236,11 +326,15 @@
   text-align: center;
   color: #3b3939;
 }
+* body .proj h2 {
+  text-align: center;
+  margin-top: 10px;
+}
 * body .contact {
   background-color: #3b3939;
   width: 100%;
-  height: 200px;
   padding-top: 6px;
+  padding-bottom: 30px;
 }
 * body .contact h1 {
   text-align: center;
@@ -272,7 +366,6 @@
   border-radius: 10px;
   margin-top: 10px;
   text-align: center;
-  height: 100px;
 }
 * body .contact .logoc ul {
   margin-bottom: 10px;
