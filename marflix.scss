@@ -2,6 +2,7 @@
 
 * {
   margin: 0;
+  padding: 0;
   font-family: "Cambo", serif;
   scroll-behavior: smooth;
 
@@ -9,24 +10,36 @@
     .idk {
       margin-top: 0;
       height: 100vh;
-      
+
       background-repeat: no-repeat;
       background-size: 100%;
       width: 100%;
       margin-top: 0px;
       animation: fondu 45s ease-in-out infinite both;
-    
-    
-    @keyframes fondu{
-        0%{background-image: url(/images/stylo.jpg);}
-        28%{background-image: url(/images/stylo.jpg);}
-        
-        33%{background-image: url("/images/cacao.jpg");}
-        61%{background-image: url("/images/cacao.jpg");}
-        66%{background-image: url("/images/bureau.jpg") ;}
-        95%{background-image: url("/images/bureau.jpg") ;}
-        100%{background-image: url("/images/stylo.jpg");}
-    }
+
+      @keyframes fondu {
+        0% {
+          background-image: url(/images/stylo.jpg);
+        }
+        27% {
+          background-image: url(/images/stylo.jpg);
+        }
+        33% {
+          background-image: url("/images/cacao.jpg");
+        }
+        60% {
+          background-image: url("/images/cacao.jpg");
+        }
+        66% {
+          background-image: url("/images/bureau.jpg");
+        }
+        94% {
+          background-image: url("/images/bureau.jpg");
+        }
+        100% {
+          background-image: url("/images/stylo.jpg");
+        }
+      }
 
       nav {
         width: 90%;
@@ -163,7 +176,7 @@
     }
 
     .about {
-      height: 1000px;
+      height: 1200px;
       background-color: rgb(225, 231, 237);
       padding-top: 250px;
 
@@ -175,89 +188,82 @@
       .block {
         display: flex;
         margin-top: 80px;
-        
-        
+
         .desc {
-          
           width: 50%;
-          height: 750px;
+          height: 900px;
           border-right: 1px solid #1f1f1f;
           display: flex;
           justify-content: center;
-          padding-top: 20px ;
+          padding-top: 20px;
           .description {
-              width: 60%;
-              height: 600px;
-              
-              border: 3px solid aqua;
-              border-radius: 10px;
-              padding: 20px;
-              h1 {
-                font-size: 38px;
-              }
-              p{
-                margin-top: 25px;
-              }
-              
+            width: 70%;
+            height: 850px;
 
+            border: 3px solid aqua;
+            border-radius: 10px;
+
+            h1 {
+              font-size: 38px;
+            }
+            p {
+              margin-top: 25px;
+            }
           }
         }
         .Cv {
-          
           width: 50%;
-          height: 750px;
-          border-left: 1px solid #1f1f1f; 
+          height: 900px;
+          border-left: 1px solid #1f1f1f;
           display: flex;
           justify-content: center;
-          padding-top: 20px ;
-  
+          padding-top: 20px;
+
           .contentcv {
-              width: 60%;
-              height: 650px;
-              
-              border: 3px solid aqua;
-              border-radius: 10px;
-              
-              
-              text-align: center;
-              .moncv{
+            width: 70%;
+            height: 850px;
+
+            border: 3px solid aqua;
+            border-radius: 10px;
+
+            text-align: center;
+            .moncv {
+              width: 100%;
+
+              height: 100%;
+
+              border-radius: 5px;
+
+              img {
                 width: 100%;
-                
                 height: 100%;
-               
-                border-radius: 5px ;
-               
-                img{
-                  width: 100%;
-                  height: 100%;
-                  border-radius: 5px ;
+                border-radius: 5px;
+              }
+            }
+            a {
+              button {
+                margin-top: 30px;
+                border-radius: 30px;
+                font-size: 20px;
+                padding: 10px;
+                background-image: linear-gradient(to right, #1db0dc, #23d0d3);
+                color: white;
+                border: #1db0dc;
+                transition: all 3s;
+                &:hover {
+                  background: linear-gradient(to left, #1db0dc, #23d0d3);
                 }
               }
-              a{
-                button{
-                  margin-top: 30px;
-                  border-radius: 30px;
-                  font-size: 20px;
-                  padding: 10px;
-                  background-image: linear-gradient(to right , #1db0dc , #23d0d3);
-                  color: white;
-                  border: #1db0dc;
-                  transition: all 3s;
-                  &:hover{
-                    background: linear-gradient(to left , #1db0dc , #23d0d3);
-                  }
-                }
-              }
+            }
           }
         }
-       
       }
     }
     .techno {
       height: 1100px;
       background-color: rgb(225, 231, 237);
       padding-top: 50px;
-      
+
       h1 {
         font-size: 50px;
         text-align: center;
@@ -291,13 +297,13 @@
           &:hover {
             transform-style: preserve-3d;
             transform: rotateY(360deg);
-            
-            @keyframes rotate{
+
+            @keyframes rotate {
               from {
-                transform:  rotateY(0deg);
+                transform: rotateY(0deg);
               }
               to {
-                transform:  rotateY(360deg);
+                transform: rotateY(360deg);
               }
             }
           }
@@ -307,7 +313,6 @@
             border-right: 2px solid rgb(193, 187, 187);
             img {
               height: 40px;
-              
             }
           }
           .explain {
@@ -325,7 +330,7 @@
         .diff {
           width: 200px;
         }
-        
+
         .yellow {
           background-color: rgb(255, 255, 43);
         }
@@ -338,11 +343,9 @@
         }
         .purple {
           background-color: rgb(245, 181, 245);
-          
         }
-        .green{
+        .green {
           background-color: rgb(2, 255, 2);
-          
         }
         .black {
           background-color: rgb(61, 61, 61);
@@ -354,7 +357,6 @@
         }
         .orange1 {
           background-color: orange;
-
         }
         .orange2 {
           background-color: rgb(254, 209, 126);
@@ -383,7 +385,7 @@
       }
     }
     .proj {
-      height: 800px;
+      height: 1800px;
       background-color: rgb(225, 231, 237);
       padding-top: 10px;
       h1 {
@@ -391,15 +393,93 @@
         text-align: center;
         color: rgba($color: #3b3939, $alpha: 1);
       }
-      h2{
+      h2 {
         text-align: center;
-        margin-top: 10px;
+        margin-top: 40px;
+      }
+      .r {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        .show {
+          display: flex;
+          flex-direction: column;
+          margin-left: 2%;
+          margin-right: 2%;
+
+          img {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            height: 25vh;
+            width: 325px;
+            object-fit: fill;
+            border: 2px solid aqua;
+          }
+          .demo {
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            height: 250px;
+            width: 325px;
+            background-color: #3b3939;
+            border: 2px solid aqua;
+            border-top: none;
+            h3 {
+              color: white;
+              text-align: center;
+              margin-top: 1em;
+              font-size: 1.6em;
+            }
+            .text {
+              margin: 1em 1em 1em 1em;
+              font-size: 1.2em;
+              color: #23d0d3;
+            }
+
+            .link {
+              display: flex;
+              justify-content: center;
+
+              a {
+                text-decoration: none;
+                color: white;
+              cursor: pointer;
+              transition: all 1s;
+              position: relative;
+                &:hover {
+                  color: aqua;
+                  font-size: 20px;
+                }
+                &::after {
+                  content: "";
+                  background: aqua;
+                  height: 2px;
+                  position: absolute;
+                  width: 0;
+                  bottom: 0;
+                  left: 50%;
+                  transform: translateX(-50%);
+                  transition: width 0.3s ease-in-out;
+                }
+                /* Style pour le texte sur hover */
+                &:hover::after {
+                  width: 70%;
+                }
+
+                p {
+                  color: white;
+                  margin: 0 1em 0 1em;
+                  font-size: 1.1em;
+                }
+              }
+            }
+          }
+        }
       }
     }
     .contact {
       background-color: rgba($color: #3b3939, $alpha: 1);
       width: 100%;
-      
+
       padding-top: 6px;
       padding-bottom: 30px;
 
@@ -432,11 +512,10 @@
         border: 3px solid white;
         width: 80%;
         margin-left: 10%;
-        
+
         border-radius: 10px;
         margin-top: 10px;
         text-align: center;
-        
 
         ul {
           margin-bottom: 10px;

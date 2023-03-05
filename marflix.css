@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cambo&display=swap");
 * {
   margin: 0;
+  padding: 0;
   font-family: "Cambo", serif;
   scroll-behavior: smooth;
 }
@@ -17,19 +18,19 @@
   0% {
     background-image: url(/images/stylo.jpg);
   }
-  28% {
+  27% {
     background-image: url(/images/stylo.jpg);
   }
   33% {
     background-image: url("/images/cacao.jpg");
   }
-  61% {
+  60% {
     background-image: url("/images/cacao.jpg");
   }
   66% {
     background-image: url("/images/bureau.jpg");
   }
-  95% {
+  94% {
     background-image: url("/images/bureau.jpg");
   }
   100% {
@@ -149,7 +150,7 @@
   width: 30%;
 }
 * body .about {
-  height: 1000px;
+  height: 1200px;
   background-color: rgb(225, 231, 237);
   padding-top: 250px;
 }
@@ -164,18 +165,17 @@
 }
 * body .about .block .desc {
   width: 50%;
-  height: 750px;
+  height: 900px;
   border-right: 1px solid #1f1f1f;
   display: flex;
   justify-content: center;
   padding-top: 20px;
 }
 * body .about .block .desc .description {
-  width: 60%;
-  height: 600px;
+  width: 70%;
+  height: 850px;
   border: 3px solid aqua;
   border-radius: 10px;
-  padding: 20px;
 }
 * body .about .block .desc .description h1 {
   font-size: 38px;
@@ -185,15 +185,15 @@
 }
 * body .about .block .Cv {
   width: 50%;
-  height: 750px;
+  height: 900px;
   border-left: 1px solid #1f1f1f;
   display: flex;
   justify-content: center;
   padding-top: 20px;
 }
 * body .about .block .Cv .contentcv {
-  width: 60%;
-  height: 650px;
+  width: 70%;
+  height: 850px;
   border: 3px solid aqua;
   border-radius: 10px;
   text-align: center;
@@ -343,7 +343,7 @@
   background-color: rgb(231, 171, 171);
 }
 * body .proj {
-  height: 800px;
+  height: 1800px;
   background-color: rgb(225, 231, 237);
   padding-top: 10px;
 }
@@ -354,7 +354,82 @@
 }
 * body .proj h2 {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 40px;
+}
+* body .proj .r {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+* body .proj .r .show {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+* body .proj .r .show img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 25vh;
+  width: 325px;
+  -o-object-fit: fill;
+     object-fit: fill;
+  border: 2px solid aqua;
+}
+* body .proj .r .show .demo {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  height: 250px;
+  width: 325px;
+  background-color: #3b3939;
+  border: 2px solid aqua;
+  border-top: none;
+}
+* body .proj .r .show .demo h3 {
+  color: white;
+  text-align: center;
+  margin-top: 1em;
+  font-size: 1.6em;
+}
+* body .proj .r .show .demo .text {
+  margin: 1em 1em 1em 1em;
+  font-size: 1.2em;
+  color: #23d0d3;
+}
+* body .proj .r .show .demo .link {
+  display: flex;
+  justify-content: center;
+}
+* body .proj .r .show .demo .link a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  transition: all 1s;
+  position: relative;
+  /* Style pour le texte sur hover */
+}
+* body .proj .r .show .demo .link a:hover {
+  color: aqua;
+  font-size: 20px;
+}
+* body .proj .r .show .demo .link a::after {
+  content: "";
+  background: aqua;
+  height: 2px;
+  position: absolute;
+  width: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease-in-out;
+}
+* body .proj .r .show .demo .link a:hover::after {
+  width: 70%;
+}
+* body .proj .r .show .demo .link a p {
+  color: white;
+  margin: 0 1em 0 1em;
+  font-size: 1.1em;
 }
 * body .contact {
   background-color: #3b3939;
