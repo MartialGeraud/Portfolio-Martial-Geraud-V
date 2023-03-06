@@ -12,7 +12,7 @@
       height: 100vh;
 
       background-repeat: no-repeat;
-      background-size: 100%;
+      background-size: cover;
       width: 100%;
       margin-top: 0px;
       animation: fondu 45s ease-in-out infinite both;
@@ -21,21 +21,27 @@
         0% {
           background-image: url(/images/stylo.jpg);
         }
+
         27% {
           background-image: url(/images/stylo.jpg);
         }
+
         33% {
           background-image: url("/images/cacao.jpg");
         }
+
         60% {
           background-image: url("/images/cacao.jpg");
         }
+
         66% {
           background-image: url("/images/bureau.jpg");
         }
+
         94% {
           background-image: url("/images/bureau.jpg");
         }
+
         100% {
           background-image: url("/images/stylo.jpg");
         }
@@ -54,16 +60,32 @@
         align-items: center;
         justify-content: space-between;
 
+        animation: toggle 2s;
+
+        @keyframes toggle {
+          from {
+            height: 0;
+
+
+          }
+
+          to {
+            height: 60px;
+          }
+        }
+
         h2 {
           margin-left: 3%;
+          animation: disabled 3s;
+          animation-delay: 1.5s;
+          animation-fill-mode: forwards;
+          opacity: 0;
 
           a {
-            background: linear-gradient(
-              to left,
-              white 35%,
-              aqua 50%,
-              white 70%
-            );
+            background: linear-gradient(to left,
+                white 35%,
+                aqua 50%,
+                white 70%);
             scroll-behavior: smooth;
             color: white;
             background-size: 200%;
@@ -71,6 +93,7 @@
             -webkit-text-fill-color: transparent;
 
             animation: shine 1s linear infinite;
+
             @keyframes shine {
               to {
                 background-position: 150%;
@@ -90,6 +113,10 @@
 
         ul {
           margin-right: 3%;
+          animation: disabled 3s;
+          animation-delay: 1.5s;
+          animation-fill-mode: forwards;
+          opacity: 0;
 
           cursor: default;
 
@@ -111,6 +138,7 @@
                 color: aqua;
                 font-size: 34px;
               }
+
               &::after {
                 content: "";
                 background: aqua;
@@ -122,6 +150,7 @@
                 transform: translateX(-50%);
                 transition: width 0.3s ease-in-out;
               }
+
               /* Style pour le texte sur hover */
               &:hover::after {
                 width: 100%;
@@ -134,13 +163,45 @@
       .present {
         color: white;
         position: absolute;
-        top: 35%;
+        top: 300px;
         left: 7.5%;
         background-color: rgba($color: #5e5a5a, $alpha: 0.6);
         width: 45%;
         text-align: center;
         padding-top: 30px;
         border-radius: 4px;
+        height: 269px;
+        animation: slide 2s;
+
+        @keyframes slide {
+          from {
+            width: 0;
+
+
+          }
+
+          to {
+            width: 45%;
+          }
+        }
+
+        p {
+
+          animation: disabled 3s;
+          animation-delay: 1.5s;
+          animation-fill-mode: forwards;
+          opacity: 0;
+
+          @keyframes disabled {
+            from {
+              opacity: 0;
+            }
+
+            to {
+              opacity: 1;
+            }
+          }
+        }
 
         p.pres {
           font-size: 32px;
@@ -167,9 +228,10 @@
           color: aqua;
         }
       }
+
       .bitmojie {
         position: absolute;
-        top: 20%;
+        top: 230px;
         left: 60%;
         width: 30%;
       }
@@ -185,6 +247,7 @@
         text-align: center;
         color: rgba($color: #403232, $alpha: 1);
       }
+
       .block {
         display: flex;
         margin-top: 80px;
@@ -196,6 +259,7 @@
           display: flex;
           justify-content: center;
           padding-top: 20px;
+
           .description {
             width: 70%;
             height: 850px;
@@ -206,11 +270,13 @@
             h1 {
               font-size: 38px;
             }
+
             p {
               margin-top: 25px;
             }
           }
         }
+
         .Cv {
           width: 50%;
           height: 900px;
@@ -227,6 +293,7 @@
             border-radius: 10px;
 
             text-align: center;
+
             .moncv {
               width: 100%;
 
@@ -240,6 +307,7 @@
                 border-radius: 5px;
               }
             }
+
             a {
               button {
                 margin-top: 30px;
@@ -250,6 +318,7 @@
                 color: white;
                 border: #1db0dc;
                 transition: all 3s;
+
                 &:hover {
                   background: linear-gradient(to left, #1db0dc, #23d0d3);
                 }
@@ -259,6 +328,7 @@
         }
       }
     }
+
     .techno {
       height: 1100px;
       background-color: rgb(225, 231, 237);
@@ -269,14 +339,17 @@
         text-align: center;
         color: rgba($color: #3b3939, $alpha: 1);
       }
+
       h2 {
         text-align: center;
         margin-top: 20px;
       }
+
       h3 {
         text-align: center;
         margin-top: 20px;
       }
+
       .languages {
         display: flex;
         justify-content: center;
@@ -294,6 +367,7 @@
           flex-wrap: nowrap;
           margin-top: 20px;
           transition: transform 0.5s ease-in-out;
+
           &:hover {
             transform-style: preserve-3d;
             transform: rotateY(360deg);
@@ -302,19 +376,23 @@
               from {
                 transform: rotateY(0deg);
               }
+
               to {
                 transform: rotateY(360deg);
               }
             }
           }
+
           .img {
             justify-content: center;
             height: 40px;
             border-right: 2px solid rgb(193, 187, 187);
+
             img {
               height: 40px;
             }
           }
+
           .explain {
             display: flex;
             align-items: center;
@@ -322,11 +400,13 @@
             height: 100%;
             border-top-right-radius: 5px;
             border-bottom-right-radius: 5px;
+
             p {
               margin: 10px;
             }
           }
         }
+
         .diff {
           width: 200px;
         }
@@ -334,73 +414,92 @@
         .yellow {
           background-color: rgb(255, 255, 43);
         }
+
         .blue {
           background-color: rgb(174, 174, 252);
           color: white;
         }
+
         .pink {
           background-color: rgb(254, 218, 224);
         }
+
         .purple {
           background-color: rgb(245, 181, 245);
         }
+
         .green {
           background-color: rgb(2, 255, 2);
         }
+
         .black {
           background-color: rgb(61, 61, 61);
           color: white;
         }
+
         .php {
           background-color: #6970b4;
           color: white;
         }
+
         .orange1 {
           background-color: orange;
         }
+
         .orange2 {
           background-color: rgb(254, 209, 126);
         }
+
         .orange3 {
           background-color: rgb(255, 202, 104);
         }
+
         .red {
           background-color: rgb(197, 1, 1);
           color: white;
         }
+
         .gray {
           background-color: #5e5a5a;
           color: white;
         }
+
         .gray2 {
           background-color: #c4c4c4;
         }
+
         .eclipse {
           background-color: #2c2255;
           color: white;
         }
+
         .smoke {
           background-color: rgb(231, 171, 171);
         }
       }
     }
+
     .proj {
-      height: 1800px;
+      height: 2000px;
       background-color: rgb(225, 231, 237);
       padding-top: 10px;
+
       h1 {
         font-size: 50px;
         text-align: center;
         color: rgba($color: #3b3939, $alpha: 1);
       }
+
       h2 {
         text-align: center;
         margin-top: 40px;
       }
+
       .r {
         display: flex;
         justify-content: center;
         margin-top: 50px;
+
         .show {
           display: flex;
           flex-direction: column;
@@ -415,6 +514,7 @@
             object-fit: fill;
             border: 2px solid aqua;
           }
+
           .demo {
             border-bottom-left-radius: 5px;
             border-bottom-right-radius: 5px;
@@ -423,12 +523,14 @@
             background-color: #3b3939;
             border: 2px solid aqua;
             border-top: none;
+
             h3 {
               color: white;
               text-align: center;
               margin-top: 1em;
               font-size: 1.6em;
             }
+
             .text {
               margin: 1em 1em 1em 1em;
               font-size: 1.2em;
@@ -442,13 +544,15 @@
               a {
                 text-decoration: none;
                 color: white;
-              cursor: pointer;
-              transition: all 1s;
-              position: relative;
+                cursor: pointer;
+                transition: all 1s;
+                position: relative;
+
                 &:hover {
                   color: aqua;
                   font-size: 20px;
                 }
+
                 &::after {
                   content: "";
                   background: aqua;
@@ -460,6 +564,7 @@
                   transform: translateX(-50%);
                   transition: width 0.3s ease-in-out;
                 }
+
                 /* Style pour le texte sur hover */
                 &:hover::after {
                   width: 70%;
@@ -476,6 +581,7 @@
         }
       }
     }
+
     .contact {
       background-color: rgba($color: #3b3939, $alpha: 1);
       width: 100%;
@@ -495,6 +601,7 @@
           -webkit-text-fill-color: transparent;
 
           animation: shine2 1s linear infinite;
+
           @keyframes shine2 {
             to {
               background-position: 150%;
@@ -508,6 +615,7 @@
           cursor: default;
         }
       }
+
       .logoc {
         border: 3px solid white;
         width: 80%;
@@ -521,6 +629,7 @@
           margin-bottom: 10px;
 
           margin-top: 6px;
+
           li {
             display: inline;
             text-decoration: none;
@@ -530,38 +639,52 @@
 
             a {
               text-decoration: none;
+
+
               img {
-                transition: all 1s;
+
+                &.github {
+
+                  color: black;
+
+                  &:hover {
+                    scale: 1.2;
+                  }
+                }
+
                 &.linkedin {
                   width: 6%;
+
                   &:hover {
                     width: 7%;
                     margin-top: 10px;
                   }
                 }
-                &.github {
-                  width: 6%;
-                  &:hover {
-                    width: 8%;
-                  }
-                }
+
+
                 &.gitlab {
                   width: 6%;
+
                   &:hover {
                     width: 7%;
                     margin-top: 10px;
                   }
                 }
+
                 &.email {
                   width: 6%;
+
                   &:hover {
                     width: 8%;
                   }
                 }
+
                 &.tel {
-                  width: 7%;
+                  width: 48px;
+                  height: 48px;
+
                   &:hover {
-                    width: 8%;
+                    scale: 1.2;
                   }
                 }
               }
@@ -571,6 +694,7 @@
       }
     }
   }
+
   .mention {
     height: 50px;
     width: 100%;
@@ -578,6 +702,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
     p {
       text-align: center;
       color: white;

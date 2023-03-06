@@ -9,7 +9,7 @@
   margin-top: 0;
   height: 100vh;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   width: 100%;
   margin-top: 0px;
   animation: fondu 45s ease-in-out infinite both;
@@ -49,9 +49,22 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  animation: toggle 2s;
+}
+@keyframes toggle {
+  from {
+    height: 0;
+  }
+  to {
+    height: 60px;
+  }
 }
 * body .idk nav h2 {
   margin-left: 3%;
+  animation: disabled 3s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 * body .idk nav h2 a {
   background: linear-gradient(to left, white 35%, aqua 50%, white 70%);
@@ -77,6 +90,10 @@
 }
 * body .idk nav ul {
   margin-right: 3%;
+  animation: disabled 3s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
   cursor: default;
 }
 * body .idk nav ul li {
@@ -115,13 +132,37 @@
 * body .idk .present {
   color: white;
   position: absolute;
-  top: 35%;
+  top: 300px;
   left: 7.5%;
   background-color: rgba(94, 90, 90, 0.6);
   width: 45%;
   text-align: center;
   padding-top: 30px;
   border-radius: 4px;
+  height: 269px;
+  animation: slide 2s;
+}
+@keyframes slide {
+  from {
+    width: 0;
+  }
+  to {
+    width: 45%;
+  }
+}
+* body .idk .present p {
+  animation: disabled 3s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+@keyframes disabled {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 * body .idk .present p.pres {
   font-size: 32px;
@@ -145,7 +186,7 @@
 }
 * body .idk .bitmojie {
   position: absolute;
-  top: 20%;
+  top: 230px;
   left: 60%;
   width: 30%;
 }
@@ -343,7 +384,7 @@
   background-color: rgb(231, 171, 171);
 }
 * body .proj {
-  height: 1800px;
+  height: 2000px;
   background-color: rgb(225, 231, 237);
   padding-top: 10px;
 }
@@ -481,8 +522,11 @@
 * body .contact .logoc ul li a {
   text-decoration: none;
 }
-* body .contact .logoc ul li a img {
-  transition: all 1s;
+* body .contact .logoc ul li a img.github {
+  color: black;
+}
+* body .contact .logoc ul li a img.github:hover {
+  scale: 1.2;
 }
 * body .contact .logoc ul li a img.linkedin {
   width: 6%;
@@ -490,12 +534,6 @@
 * body .contact .logoc ul li a img.linkedin:hover {
   width: 7%;
   margin-top: 10px;
-}
-* body .contact .logoc ul li a img.github {
-  width: 6%;
-}
-* body .contact .logoc ul li a img.github:hover {
-  width: 8%;
 }
 * body .contact .logoc ul li a img.gitlab {
   width: 6%;
@@ -511,10 +549,11 @@
   width: 8%;
 }
 * body .contact .logoc ul li a img.tel {
-  width: 7%;
+  width: 48px;
+  height: 48px;
 }
 * body .contact .logoc ul li a img.tel:hover {
-  width: 8%;
+  scale: 1.2;
 }
 * .mention {
   height: 50px;
