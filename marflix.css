@@ -5,6 +5,9 @@
   font-family: "Cambo", serif;
   scroll-behavior: smooth;
 }
+* body {
+  animation: 10s scroll;
+}
 * body .idk {
   margin-top: 0;
   height: 100vh;
@@ -13,6 +16,7 @@
   width: 100%;
   margin-top: 0px;
   animation: fondu 45s ease-in-out infinite both;
+  position: relative;
 }
 @keyframes fondu {
   0% {
@@ -51,14 +55,6 @@
   justify-content: space-between;
   animation: toggle 2s;
 }
-@keyframes toggle {
-  from {
-    height: 0;
-  }
-  to {
-    height: 60px;
-  }
-}
 * body .idk nav h2 {
   margin-left: 3%;
   animation: disabled 3s;
@@ -79,11 +75,6 @@
   text-decoration: none;
   font-weight: bold;
   transition: all 1s;
-}
-@keyframes shine {
-  to {
-    background-position: 150%;
-  }
 }
 * body .idk nav h2 a:hover {
   font-size: 38px;
@@ -142,27 +133,11 @@
   height: 269px;
   animation: slide 2s;
 }
-@keyframes slide {
-  from {
-    width: 0;
-  }
-  to {
-    width: 45%;
-  }
-}
 * body .idk .present p {
   animation: disabled 3s;
   animation-delay: 1.5s;
   animation-fill-mode: forwards;
   opacity: 0;
-}
-@keyframes disabled {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 * body .idk .present p.pres {
   font-size: 32px;
@@ -189,6 +164,29 @@
   top: 230px;
   left: 60%;
   width: 30%;
+  animation: disabled 3s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+* body .idk .bas {
+  position: absolute;
+  bottom: 1%;
+  right: 3%;
+  animation: disabled 2.5s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+* body .idk .bas:hover {
+  scale: 1.1;
+}
+* body .idk .bas img {
+  animation: turn 5s infinite;
+  animation-delay: 4s;
+  transform-style: preserve-3d;
+  transform: rotateY(360deg);
+  animation-fill-mode: forwards;
 }
 * body .about {
   height: 1200px;
@@ -296,19 +294,11 @@
   border-radius: 5px;
   flex-wrap: nowrap;
   margin-top: 20px;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.7s ease-in-out;
 }
 * body .techno .languages .element:hover {
   transform-style: preserve-3d;
   transform: rotateY(360deg);
-}
-@keyframes rotate {
-  from {
-    transform: rotateY(0deg);
-  }
-  to {
-    transform: rotateY(360deg);
-  }
 }
 * body .techno .languages .element .img {
   justify-content: center;
@@ -384,7 +374,7 @@
   background-color: rgb(231, 171, 171);
 }
 * body .proj {
-  height: 2000px;
+  height: 200vh;
   background-color: rgb(225, 231, 237);
   padding-top: 10px;
 }
@@ -411,7 +401,7 @@
 * body .proj .r .show img {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  height: 25vh;
+  height: 20vh;
   width: 325px;
   -o-object-fit: fill;
      object-fit: fill;
@@ -496,22 +486,19 @@
   transition: all 1s;
   cursor: default;
 }
-@keyframes shine2 {
-  to {
-    background-position: 150%;
-  }
-}
 * body .contact .logoc {
   border: 3px solid white;
   width: 80%;
   margin-left: 10%;
   border-radius: 10px;
   margin-top: 10px;
-  text-align: center;
 }
 * body .contact .logoc ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   margin-bottom: 10px;
-  margin-top: 6px;
+  margin-top: 10px;
 }
 * body .contact .logoc ul li {
   display: inline;
@@ -522,40 +509,35 @@
 * body .contact .logoc ul li a {
   text-decoration: none;
 }
+* body .contact .logoc ul li a img.linkedin {
+  width: 50px;
+  height: 50px;
+}
+* body .contact .logoc ul li a img.linkedin:hover {
+  scale: 1.2;
+}
 * body .contact .logoc ul li a img.github {
-  color: black;
+  width: 53px;
+  height: 53px;
 }
 * body .contact .logoc ul li a img.github:hover {
   scale: 1.2;
 }
-* body .contact .logoc ul li a img.linkedin {
-  width: 6%;
-}
-* body .contact .logoc ul li a img.linkedin:hover {
-  width: 7%;
-  margin-top: 10px;
-}
-* body .contact .logoc ul li a img.gitlab {
-  width: 6%;
-}
-* body .contact .logoc ul li a img.gitlab:hover {
-  width: 7%;
-  margin-top: 10px;
-}
 * body .contact .logoc ul li a img.email {
-  width: 6%;
+  width: 50px;
+  height: 50px;
 }
 * body .contact .logoc ul li a img.email:hover {
-  width: 8%;
+  scale: 1.2;
 }
 * body .contact .logoc ul li a img.tel {
-  width: 48px;
-  height: 48px;
+  width: 51px;
+  height: 51px;
 }
 * body .contact .logoc ul li a img.tel:hover {
   scale: 1.2;
 }
-* .mention {
+* body .mention {
   height: 50px;
   width: 100%;
   background-color: #1f1f1f;
@@ -563,7 +545,65 @@
   align-items: center;
   justify-content: center;
 }
-* .mention p {
+* body .mention p {
   text-align: center;
   color: white;
+}
+@keyframes turn {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+@keyframes disabled {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slide {
+  from {
+    width: 0;
+  }
+  to {
+    width: 45%;
+  }
+}
+@keyframes shine {
+  to {
+    background-position: 150%;
+  }
+}
+@keyframes toggle {
+  from {
+    height: 0;
+  }
+  to {
+    height: 60px;
+  }
+}
+@keyframes scroll {
+  from {
+    overflow: hidden;
+  }
+  to {
+    overflow: auto;
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+@keyframes shine2 {
+  to {
+    background-position: 150%;
+  }
 }/*# sourceMappingURL=marflix.css.map */
