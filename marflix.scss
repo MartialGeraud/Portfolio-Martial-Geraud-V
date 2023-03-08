@@ -63,12 +63,12 @@
         align-items: center;
         justify-content: space-between;
         animation: toggle 2s;
+        overflow: hidden;
 
         h2 {
           margin-left: 3%;
-          animation: disabled 3s;
+          animation: slideRight 2s ease forwards;
           animation-delay: 1.5s;
-          animation-fill-mode: forwards;
           opacity: 0;
 
           a {
@@ -95,10 +95,7 @@
 
         ul {
           margin-right: 3%;
-          animation: disabled 3s;
-          animation-delay: 1.5s;
-          animation-fill-mode: forwards;
-          opacity: 0;
+          
 
           cursor: default;
 
@@ -106,6 +103,9 @@
             list-style-type: none;
             display: inline-block;
             padding: 10px;
+            animation: slideTop 2s ease forwards;
+            animation-delay: calc(.4s * var(--i));
+            opacity: 0;
 
             a {
               font-size: 22px;
@@ -762,6 +762,26 @@
   @keyframes shine2 {
     to {
       background-position: 150%;
+    }
+  }
+  @keyframes slideTop {
+     0%{
+      transform: translateY(-100px);
+      opacity: 0;
+     }
+     100%{
+      transform: translateY(0);
+      opacity: 1;
+     }
+  }
+  @keyframes slideRight {
+    0%{
+      transform: translateX(-150px);
+      opacity: 0 ;
+    }
+    100%{
+      transform: translateX(0);
+      opacity: 1;
     }
   }
 }
