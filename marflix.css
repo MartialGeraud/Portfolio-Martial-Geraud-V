@@ -6,7 +6,7 @@
   scroll-behavior: smooth;
 }
 * body {
-  animation: 10s scroll;
+  animation: 20s scroll;
 }
 * body .idk {
   margin-top: 0;
@@ -130,8 +130,9 @@
   text-align: center;
   padding-top: 30px;
   border-radius: 4px;
-  height: 269px;
+  height: 270px;
   animation: slide 2s;
+  overflow: hidden;
 }
 * body .idk .present p {
   animation: disabled 3s;
@@ -143,13 +144,16 @@
   font-size: 36px;
 }
 * body .idk .present p.nom {
-  font-size: 36px;
-  margin-top: 20px;
+  margin-top: 25px;
   color: white;
+  opacity: 0;
+  font-size: 36px;
+  animation: 5s slideRight 2s ease forwards;
 }
 * body .idk .present p.met {
   font-size: 36px;
-  margin-top: 20px;
+  margin-top: 25px;
+  animation: 5s slideLeft 2s ease forwards;
 }
 * body .idk .present span {
   color: aqua;
@@ -616,6 +620,16 @@
 @keyframes slideRight {
   0% {
     transform: translateX(-150px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideLeft {
+  0% {
+    transform: translateX(150px);
     opacity: 0;
   }
   100% {

@@ -7,7 +7,7 @@
   scroll-behavior: smooth;
 
   body {
-    animation: 10s scroll;
+    animation: 20s scroll;
 
     .idk {
       margin-top: 0;
@@ -71,10 +71,12 @@
           opacity: 0;
 
           a {
-            background: linear-gradient(to left,
-                white 35%,
-                aqua 50%,
-                white 70%);
+            background: linear-gradient(
+              to left,
+              white 35%,
+              aqua 50%,
+              white 70%
+            );
             scroll-behavior: smooth;
             color: white;
             background-size: 200%;
@@ -95,7 +97,6 @@
 
         ul {
           margin-right: 3%;
-          
 
           cursor: default;
 
@@ -104,7 +105,7 @@
             display: inline-block;
             padding: 10px;
             animation: slideTop 2s ease forwards;
-            animation-delay: calc(.4s * var(--i));
+            animation-delay: calc(0.4s * var(--i));
             opacity: 0;
 
             a {
@@ -152,17 +153,15 @@
         text-align: center;
         padding-top: 30px;
         border-radius: 4px;
-        height: 269px;
+        height: 270px;
         animation: slide 2s;
+        overflow: hidden;
 
         p {
-
           animation: disabled 3s;
           animation-delay: 1.5s;
           animation-fill-mode: forwards;
           opacity: 0;
-
-
         }
 
         p.pres {
@@ -170,19 +169,24 @@
         }
 
         p.nom {
-          font-size: 36px;
-          margin-top: 20px;
+          margin-top: 25px;
+
           color: white;
+          opacity: 0;
+          font-size: 36px;
+          animation: 5s slideRight 2s ease forwards;
         }
 
         p.met {
           font-size: 36px;
-          margin-top: 20px;
+          margin-top: 25px;
+          animation: 5s slideLeft 2s ease forwards;
         }
-      
+
         span {
           color: aqua;
           font-size: 54px;
+          
         }
       }
 
@@ -206,21 +210,16 @@
         animation-fill-mode: forwards;
         opacity: 0;
 
-
         &:hover {
           scale: 1.1;
         }
 
         img {
-
           animation: turn 5s infinite;
           animation-delay: 4s;
           transform-style: preserve-3d;
           transform: rotateY(360deg);
           animation-fill-mode: forwards;
-
-
-
         }
       }
     }
@@ -594,17 +593,12 @@
         border-radius: 10px;
         margin-top: 10px;
 
-
-
         ul {
           display: flex;
           justify-content: space-evenly;
           align-items: center;
           margin-bottom: 10px;
           margin-top: 10px;
-
-
-
 
           li {
             display: inline;
@@ -616,38 +610,28 @@
             a {
               text-decoration: none;
 
-
               img {
-
-
-
                 &.linkedin {
                   width: 50px;
                   height: 50px;
 
-
                   &:hover {
                     scale: 1.2;
-
                   }
                 }
-
 
                 &.github {
                   width: 53px;
                   height: 53px;
 
-
                   &:hover {
                     scale: 1.2;
-
                   }
                 }
 
                 &.email {
                   width: 50px;
                   height: 50px;
-
 
                   &:hover {
                     scale: 1.2;
@@ -686,12 +670,10 @@
 
   @keyframes turn {
     from {
-
       transform: rotateY(0deg);
     }
 
     to {
-
       transform: rotateY(360deg);
     }
   }
@@ -724,24 +706,21 @@
 
   @keyframes slideBottom {
     from {
-      transform: translateY(-100px);      
+      transform: translateY(-100px);
     }
     to {
       transform: translateY(0);
-      
     }
   }
 
   @keyframes scroll {
     from {
       overflow: hidden;
-
     }
 
     to {
       overflow: auto;
     }
-
   }
 
   @keyframes rotate {
@@ -760,21 +739,31 @@
     }
   }
   @keyframes slideTop {
-     0%{
+    0% {
       transform: translateY(-100px);
       opacity: 0;
-     }
-     100%{
+    }
+    100% {
       transform: translateY(0);
       opacity: 1;
-     }
+    }
   }
   @keyframes slideRight {
-    0%{
+    0% {
       transform: translateX(-150px);
-      opacity: 0 ;
+      opacity: 0;
     }
-    100%{
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slideLeft {
+    0% {
+      transform: translateX(150px);
+      opacity: 0;
+    }
+    100% {
       transform: translateX(0);
       opacity: 1;
     }
