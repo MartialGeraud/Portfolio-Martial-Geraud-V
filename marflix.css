@@ -15,26 +15,26 @@
   background-size: cover;
   width: 100%;
   margin-top: 0px;
-  animation: fondu 45s ease-in-out infinite both;
+  animation: fondu 45s ease-in-out infinite forwards;
   position: relative;
 }
 @keyframes fondu {
   0% {
     background-image: url(/images/stylo.jpg);
   }
-  27% {
+  31% {
     background-image: url(/images/stylo.jpg);
   }
-  33% {
-    background-image: url("/images/cacao.jpg");
+  38% {
+    background-image: url("/images/fdedark.jpg");
   }
-  60% {
-    background-image: url("/images/cacao.jpg");
+  65% {
+    background-image: url("/images/fdedark.jpg");
   }
-  66% {
+  72% {
     background-image: url("/images/bureau.jpg");
   }
-  94% {
+  97% {
     background-image: url("/images/bureau.jpg");
   }
   100% {
@@ -47,13 +47,13 @@
   background-color: rgba(94, 90, 90, 0.6);
   border-radius: 10px;
   margin-left: 5%;
-  top: 6px;
+  top: 2vh;
   position: absolute;
   padding: 5px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  animation: toggle 2s;
+  animation: slideBottom 2.5s ease forwards;
   overflow: hidden;
 }
 * body .idk nav h2 {
@@ -75,6 +75,7 @@
   text-decoration: none;
   font-weight: bold;
   transition: all 1s;
+  cursor: default;
 }
 * body .idk nav h2 a:hover {
   font-size: 38px;
@@ -122,7 +123,7 @@
 * body .idk .present {
   color: white;
   position: absolute;
-  top: 300px;
+  top: 40vh;
   left: 7.5%;
   background-color: rgba(94, 90, 90, 0.6);
   width: 45%;
@@ -139,28 +140,24 @@
   opacity: 0;
 }
 * body .idk .present p.pres {
-  font-size: 32px;
+  font-size: 36px;
 }
 * body .idk .present p.nom {
-  font-size: 54px;
-  margin-top: 10px;
+  font-size: 36px;
+  margin-top: 20px;
   color: white;
 }
 * body .idk .present p.met {
-  font-size: 32px;
-  margin-top: 15px;
-}
-* body .idk .present p.test {
-  margin-top: 22px;
-  font-size: 20px;
-  margin-bottom: 30px;
+  font-size: 36px;
+  margin-top: 20px;
 }
 * body .idk .present span {
   color: aqua;
+  font-size: 54px;
 }
 * body .idk .bitmojie {
   position: absolute;
-  top: 230px;
+  top: 32vh;
   left: 60%;
   width: 30%;
   animation: disabled 3s;
@@ -373,7 +370,7 @@
   background-color: rgb(231, 171, 171);
 }
 * body .proj {
-  height: 200vh;
+  height: 250vh;
   background-color: rgb(225, 231, 237);
   padding-top: 10px;
 }
@@ -577,12 +574,12 @@
     background-position: 150%;
   }
 }
-@keyframes toggle {
+@keyframes slideBottom {
   from {
-    height: 0;
+    transform: translateY(-100px);
   }
   to {
-    height: 60px;
+    transform: translateY(0);
   }
 }
 @keyframes scroll {
