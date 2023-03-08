@@ -529,7 +529,6 @@
                   color: aqua;
                   font-size: 20px;
                 }
-
                 &::after {
                   content: "";
                   background: aqua;
@@ -540,13 +539,10 @@
                   left: 50%;
                   transform: translateX(-50%);
                   transition: width 0.3s ease-in-out;
-                }
-
-                /* Style pour le texte sur hover */
+                }       
                 &:hover::after {
                   width: 70%;
                 }
-
                 p {
                   color: white;
                   margin: 0 1em 0 1em;
@@ -667,7 +663,6 @@
       }
     }
   }
-
   @keyframes turn {
     from {
       transform: rotateY(0deg);
@@ -677,7 +672,6 @@
       transform: rotateY(360deg);
     }
   }
-
   @keyframes disabled {
     from {
       opacity: 0;
@@ -687,7 +681,6 @@
       opacity: 1;
     }
   }
-
   @keyframes slide {
     from {
       width: 0;
@@ -697,13 +690,11 @@
       width: 45%;
     }
   }
-
   @keyframes shine {
     to {
       background-position: 150%;
     }
   }
-
   @keyframes slideBottom {
     from {
       transform: translateY(-100px);
@@ -712,7 +703,6 @@
       transform: translateY(0);
     }
   }
-
   @keyframes scroll {
     from {
       overflow: hidden;
@@ -722,7 +712,6 @@
       overflow: auto;
     }
   }
-
   @keyframes rotate {
     from {
       transform: rotateY(0deg);
@@ -732,7 +721,6 @@
       transform: rotateY(360deg);
     }
   }
-
   @keyframes shine2 {
     to {
       background-position: 150%;

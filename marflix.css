@@ -437,7 +437,6 @@
   cursor: pointer;
   transition: all 1s;
   position: relative;
-  /* Style pour le texte sur hover */
 }
 * body .proj .r .show .demo .link a:hover {
   color: aqua;
