@@ -130,8 +130,8 @@
   text-align: center;
   padding-top: 30px;
   border-radius: 4px;
-  height: 270px;
-  animation: slide 2s;
+  height: 290px;
+  animation: slideRight 2s;
   overflow: hidden;
 }
 * body .idk .present p {
@@ -191,6 +191,30 @@
   color: aqua;
   font-size: 54px;
 }
+* body .idk .present .con {
+  margin-top: 20px;
+  animation: slideTop 8s;
+}
+* body .idk .present .con a {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+* body .idk .present .con a .li {
+  color: white;
+  width: 30px;
+  height: 30;
+}
+* body .idk .present .con a .li:hover {
+  color: #108bc4;
+}
+* body .idk .present .con a .gi {
+  color: white;
+  width: 30px;
+  height: 30px;
+}
+* body .idk .present .con a .gi:hover {
+  color: black;
+}
 * body .idk .bitmojie {
   position: absolute;
   top: 32vh;
@@ -221,7 +245,7 @@
   animation-fill-mode: forwards;
 }
 * body .about {
-  height: 1200px;
+  height: 800px;
   background-color: rgb(225, 231, 237);
   padding-top: 250px;
 }
@@ -232,28 +256,33 @@
 }
 * body .about .Cv {
   width: 100%;
-  height: 900px;
   display: flex;
   justify-content: center;
   padding-top: 20px;
 }
 * body .about .Cv .contentcv {
   width: 90%;
-  height: 850px;
-  border: 3px solid aqua;
+  height: 600px;
   border-radius: 10px;
   text-align: center;
   display: flex;
+  margin-top: 50px;
 }
 * body .about .Cv .contentcv .see {
-  width: 40%;
+  margin-top: 20px;
+  width: 32%;
+  margin-left: 3%;
 }
 * body .about .Cv .contentcv .see img {
   width: 350px;
   border-radius: 220px;
+  transition: all 1s;
+}
+* body .about .Cv .contentcv .see img:hover {
+  scale: 1.1;
 }
 * body .about .Cv .contentcv .see a button {
-  margin-top: 30px;
+  margin-top: 50px;
   border-radius: 30px;
   font-size: 20px;
   padding: 10px;
@@ -269,12 +298,16 @@
   width: 60%;
   border-radius: 10px;
   text-align: left;
+  margin-top: 20px;
+  margin-left: 3%;
 }
 * body .about .Cv .contentcv .description h1 {
   font-size: 38px;
+  color: #3b3939;
 }
 * body .about .Cv .contentcv .description p {
   margin-top: 25px;
+  font-size: 22px;
 }
 * body .techno {
   height: 1100px;
@@ -284,15 +317,18 @@
 * body .techno h1 {
   font-size: 50px;
   text-align: center;
-  color: #3b3939;
+  color: #403232;
 }
 * body .techno h2 {
   text-align: center;
-  margin-top: 20px;
+  font-size: 32px;
+  margin-top: 25px;
+  color: #3b3939;
 }
 * body .techno h3 {
   text-align: center;
   margin-top: 20px;
+  color: #464343;
 }
 * body .techno .languages {
   display: flex;
@@ -390,18 +426,20 @@
   background-color: rgb(231, 171, 171);
 }
 * body .proj {
-  height: 250vh;
+  height: 240vh;
   background-color: rgb(225, 231, 237);
   padding-top: 10px;
 }
 * body .proj h1 {
   font-size: 50px;
   text-align: center;
-  color: #3b3939;
+  color: #403232;
 }
 * body .proj h2 {
+  font-size: 32px;
   text-align: center;
   margin-top: 40px;
+  color: #3b3939;
 }
 * body .proj .r {
   display: flex;
@@ -572,6 +610,10 @@
   text-align: center;
   color: white;
 }
+* .under {
+  -webkit-text-decoration: underline aqua;
+          text-decoration: underline aqua;
+}
 @keyframes turn {
   from {
     transform: rotateY(0deg);
@@ -632,7 +674,7 @@
 }
 @keyframes slideTop {
   0% {
-    transform: translateY(-100px);
+    transform: translateY(100px);
     opacity: 0;
   }
   100% {
