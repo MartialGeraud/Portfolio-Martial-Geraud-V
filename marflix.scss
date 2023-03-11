@@ -166,6 +166,38 @@
 
         p.pres {
           font-size: 36px;
+          .wave {
+            animation: wave 2.5s infinite forwards;
+            transform-origin: 70% 70%;
+            display: inline-block;
+            font-size: 38px;
+            @keyframes wave {
+              0% {
+                transform: rotate(0deg);
+              }
+              10% {
+                transform: rotate(14deg);
+              }
+              20% {
+                transform: rotate(-8deg);
+              }
+              20% {
+                transform: rotate(14deg);
+              }
+              40% {
+                transform: rotate(-4deg);
+              }
+              50% {
+                transform: rotate(10deg);
+              }
+              60% {
+                transform: rotate(0deg);
+              }
+              100% {
+                transform: rotate(0deg);
+              }
+            }
+          }
         }
 
         p.nom {
@@ -186,7 +218,6 @@
         span {
           color: aqua;
           font-size: 54px;
-          
         }
       }
 
@@ -235,66 +266,26 @@
         color: rgba($color: #403232, $alpha: 1);
       }
 
-      .block {
+      .Cv {
+        width: 100%;
+        height: 900px;
         display: flex;
-        margin-top: 80px;
+        justify-content: center;
+        padding-top: 20px;
 
-        .desc {
-          width: 50%;
-          height: 900px;
-          border-right: 1px solid #1f1f1f;
+        .contentcv {
+          width: 90%;
+          height: 850px;
+          border: 3px solid aqua;
+          border-radius: 10px;
+          text-align: center;
           display: flex;
-          justify-content: center;
-          padding-top: 20px;
-
-          .description {
-            width: 70%;
-            height: 850px;
-
-            border: 3px solid aqua;
-            border-radius: 10px;
-
-            h1 {
-              font-size: 38px;
+          .see {
+            width: 40%;
+            img {
+              width: 350px;
+              border-radius: 220px;
             }
-
-            p {
-              margin-top: 25px;
-            }
-          }
-        }
-
-        .Cv {
-          width: 50%;
-          height: 900px;
-          border-left: 1px solid #1f1f1f;
-          display: flex;
-          justify-content: center;
-          padding-top: 20px;
-
-          .contentcv {
-            width: 70%;
-            height: 850px;
-
-            border: 3px solid aqua;
-            border-radius: 10px;
-
-            text-align: center;
-
-            .moncv {
-              width: 100%;
-
-              height: 100%;
-
-              border-radius: 5px;
-
-              img {
-                width: 100%;
-                height: 100%;
-                border-radius: 5px;
-              }
-            }
-
             a {
               button {
                 margin-top: 30px;
@@ -305,13 +296,26 @@
                 color: white;
                 border: #1db0dc;
                 transition: all 3s;
-
+  
                 &:hover {
                   background: linear-gradient(to left, #1db0dc, #23d0d3);
                 }
               }
             }
           }
+          .description {
+            width: 60%; 
+            border-radius: 10px;
+            text-align: left;
+            h1 {
+              font-size: 38px;
+            }
+
+            p {
+              margin-top: 25px;
+            }
+          }
+          
         }
       }
     }
@@ -539,7 +543,7 @@
                   left: 50%;
                   transform: translateX(-50%);
                   transition: width 0.3s ease-in-out;
-                }       
+                }
                 &:hover::after {
                   width: 70%;
                 }
@@ -610,36 +614,42 @@
                 &.linkedin {
                   width: 50px;
                   height: 50px;
+                  transition: transform 1.2s;
 
                   &:hover {
                     scale: 1.2;
+                    transform: rotate(360deg);
                   }
                 }
 
                 &.github {
                   width: 53px;
                   height: 53px;
-
+                  transition: transform 1.2s;
                   &:hover {
                     scale: 1.2;
+                    transform: rotate(360deg);
                   }
                 }
 
                 &.email {
                   width: 50px;
                   height: 50px;
-
+                  transition: transform 1.2s;
                   &:hover {
                     scale: 1.2;
+                    transform: rotate(360deg);
                   }
                 }
 
                 &.tel {
                   width: 51px;
                   height: 51px;
+                  transition: transform 1.2s;
 
                   &:hover {
                     scale: 1.2;
+                    transform: rotate(360deg);
                   }
                 }
               }

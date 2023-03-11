@@ -143,6 +143,38 @@
 * body .idk .present p.pres {
   font-size: 36px;
 }
+* body .idk .present p.pres .wave {
+  animation: wave 2.5s infinite forwards;
+  transform-origin: 70% 70%;
+  display: inline-block;
+  font-size: 38px;
+}
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  20% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 * body .idk .present p.nom {
   margin-top: 25px;
   color: white;
@@ -198,56 +230,29 @@
   text-align: center;
   color: #403232;
 }
-* body .about .block {
-  display: flex;
-  margin-top: 80px;
-}
-* body .about .block .desc {
-  width: 50%;
+* body .about .Cv {
+  width: 100%;
   height: 900px;
-  border-right: 1px solid #1f1f1f;
   display: flex;
   justify-content: center;
   padding-top: 20px;
 }
-* body .about .block .desc .description {
-  width: 70%;
-  height: 850px;
-  border: 3px solid aqua;
-  border-radius: 10px;
-}
-* body .about .block .desc .description h1 {
-  font-size: 38px;
-}
-* body .about .block .desc .description p {
-  margin-top: 25px;
-}
-* body .about .block .Cv {
-  width: 50%;
-  height: 900px;
-  border-left: 1px solid #1f1f1f;
-  display: flex;
-  justify-content: center;
-  padding-top: 20px;
-}
-* body .about .block .Cv .contentcv {
-  width: 70%;
+* body .about .Cv .contentcv {
+  width: 90%;
   height: 850px;
   border: 3px solid aqua;
   border-radius: 10px;
   text-align: center;
+  display: flex;
 }
-* body .about .block .Cv .contentcv .moncv {
-  width: 100%;
-  height: 100%;
-  border-radius: 5px;
+* body .about .Cv .contentcv .see {
+  width: 40%;
 }
-* body .about .block .Cv .contentcv .moncv img {
-  width: 100%;
-  height: 100%;
-  border-radius: 5px;
+* body .about .Cv .contentcv .see img {
+  width: 350px;
+  border-radius: 220px;
 }
-* body .about .block .Cv .contentcv a button {
+* body .about .Cv .contentcv .see a button {
   margin-top: 30px;
   border-radius: 30px;
   font-size: 20px;
@@ -257,8 +262,19 @@
   border: #1db0dc;
   transition: all 3s;
 }
-* body .about .block .Cv .contentcv a button:hover {
+* body .about .Cv .contentcv .see a button:hover {
   background: linear-gradient(to left, #1db0dc, #23d0d3);
+}
+* body .about .Cv .contentcv .description {
+  width: 60%;
+  border-radius: 10px;
+  text-align: left;
+}
+* body .about .Cv .contentcv .description h1 {
+  font-size: 38px;
+}
+* body .about .Cv .contentcv .description p {
+  margin-top: 25px;
 }
 * body .techno {
   height: 1100px;
@@ -511,30 +527,38 @@
 * body .contact .logoc ul li a img.linkedin {
   width: 50px;
   height: 50px;
+  transition: transform 1.2s;
 }
 * body .contact .logoc ul li a img.linkedin:hover {
   scale: 1.2;
+  transform: rotate(360deg);
 }
 * body .contact .logoc ul li a img.github {
   width: 53px;
   height: 53px;
+  transition: transform 1.2s;
 }
 * body .contact .logoc ul li a img.github:hover {
   scale: 1.2;
+  transform: rotate(360deg);
 }
 * body .contact .logoc ul li a img.email {
   width: 50px;
   height: 50px;
+  transition: transform 1.2s;
 }
 * body .contact .logoc ul li a img.email:hover {
   scale: 1.2;
+  transform: rotate(360deg);
 }
 * body .contact .logoc ul li a img.tel {
   width: 51px;
   height: 51px;
+  transition: transform 1.2s;
 }
 * body .contact .logoc ul li a img.tel:hover {
   scale: 1.2;
+  transform: rotate(360deg);
 }
 * body .mention {
   height: 50px;
