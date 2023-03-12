@@ -7,6 +7,7 @@
 }
 * body {
   animation: 20s scroll;
+  position: relative;
 }
 * body .idk {
   margin-top: 0;
@@ -15,31 +16,9 @@
   background-size: cover;
   width: 100%;
   margin-top: 0px;
-  animation: fondu 45s ease-in-out infinite forwards;
   position: relative;
-}
-@keyframes fondu {
-  0% {
-    background-image: url(/images/stylo.jpg);
-  }
-  31% {
-    background-image: url(/images/stylo.jpg);
-  }
-  38% {
-    background-image: url("/images/fdedark.jpg");
-  }
-  65% {
-    background-image: url("/images/fdedark.jpg");
-  }
-  72% {
-    background-image: url("/images/bureau.jpg");
-  }
-  97% {
-    background-image: url("/images/bureau.jpg");
-  }
-  100% {
-    background-image: url("/images/stylo.jpg");
-  }
+  transition: 6s;
+  background-image: url(/images/stylo.jpg);
 }
 * body .idk nav {
   width: 90%;
@@ -226,13 +205,14 @@
   opacity: 0;
 }
 * body .idk .bas {
-  position: absolute;
+  position: fixed;
   bottom: 1%;
-  right: 3%;
+  right: 2.5%;
   animation: disabled 2.5s;
   animation-delay: 1.5s;
   animation-fill-mode: forwards;
   opacity: 0;
+  z-index: 2;
 }
 * body .idk .bas:hover {
   scale: 1.1;
@@ -452,14 +432,18 @@
   margin-left: 2%;
   margin-right: 2%;
 }
+* body .proj .r .show:hover {
+  scale: 1.03;
+}
 * body .proj .r .show img {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  height: 20vh;
+  height: 22vh;
   width: 325px;
   -o-object-fit: fill;
      object-fit: fill;
   border: 2px solid aqua;
+  border-bottom: 1px solid aqua;
 }
 * body .proj .r .show .demo {
   border-bottom-left-radius: 5px;
@@ -480,6 +464,9 @@
   margin: 1em 1em 1em 1em;
   font-size: 1.2em;
   color: #23d0d3;
+}
+* body .proj .r .show .demo .text span {
+  color: rgb(82, 254, 254);
 }
 * body .proj .r .show .demo .link {
   display: flex;
@@ -613,6 +600,15 @@
 * .under {
   -webkit-text-decoration: underline aqua;
           text-decoration: underline aqua;
+}
+* .reveal {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 3s;
+}
+* .noreveal {
+  opacity: 0;
+  transform: translateY(100px);
 }
 @keyframes turn {
   from {
