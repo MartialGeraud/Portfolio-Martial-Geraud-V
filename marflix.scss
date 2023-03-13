@@ -288,6 +288,8 @@
         width: 100%;
         display: flex;
         justify-content: center;
+        
+        
         padding-top: 20px;
 
         .contentcv {
@@ -297,12 +299,14 @@
           text-align: center;
           display: flex;
           margin-top: 50px;
+          
+          justify-content: center;
 
           .see {
-            margin-top: 20px;
-            width: 32%;
-            margin-left: 2%;
+            margin-top: 20px;         
+            margin-left: 4%;
             margin-right: 2%;
+            text-align: center;
 
             img {
               width: 350px;
@@ -314,21 +318,23 @@
 
               }
             }
-
-            a {
-              button {
-                margin-top: 50px;
-                border-radius: 30px;
-                font-size: 20px;
-                padding: 10px;
-                background-image: linear-gradient(to right, #1db0dc, #23d0d3);
-                color: white;
-                border: #1db0dc;
-                transition: all 3s;
-                cursor: pointer;
-
-                &:hover {
-                  background: linear-gradient(to left, #1db0dc, #23d0d3);
+            div.telecharger{
+              width: 100%;
+              a {
+                button {
+                  margin-top: 50px;
+                  border-radius: 30px;
+                  font-size: 20px;
+                  padding: 10px;
+                  background-image: linear-gradient(to right, #1db0dc, #23d0d3);
+                  color: white;
+                  border: #1db0dc;
+                  transition: all 3s;
+                  cursor: pointer;
+  
+                  &:hover {
+                    background: linear-gradient(to left, #1db0dc, #23d0d3);
+                  }
                 }
               }
             }
@@ -744,20 +750,16 @@
     text-decoration: underline aqua;
 
   }
-
   .t {
     display: none;
   }
-
   .c {
     display: inline;
   }
-
-
   .reveal {
     opacity: 1;
     transform: translateY(0);
-    transition: 3s;
+    transition: 2.5s;
   }
 
   .noreveal {
@@ -871,5 +873,13 @@
       transform: translateX(0);
       opacity: 1;
     }
+  }
+  @media screen and (max-width: 1118px) {
+    
+        .show{
+          margin-top: 30px;
+        }
+     
+    
   }
 }

@@ -247,12 +247,13 @@
   text-align: center;
   display: flex;
   margin-top: 50px;
+  justify-content: center;
 }
 * body .about .Cv .contentcv .see {
   margin-top: 20px;
-  width: 32%;
-  margin-left: 2%;
+  margin-left: 4%;
   margin-right: 2%;
+  text-align: center;
 }
 * body .about .Cv .contentcv .see img {
   width: 350px;
@@ -262,7 +263,10 @@
 * body .about .Cv .contentcv .see img:hover {
   scale: 1.1;
 }
-* body .about .Cv .contentcv .see a button {
+* body .about .Cv .contentcv .see div.telecharger {
+  width: 100%;
+}
+* body .about .Cv .contentcv .see div.telecharger a button {
   margin-top: 50px;
   border-radius: 30px;
   font-size: 20px;
@@ -273,7 +277,7 @@
   transition: all 3s;
   cursor: pointer;
 }
-* body .about .Cv .contentcv .see a button:hover {
+* body .about .Cv .contentcv .see div.telecharger a button:hover {
   background: linear-gradient(to left, #1db0dc, #23d0d3);
 }
 * body .about .Cv .contentcv .description {
@@ -618,7 +622,7 @@
 * .reveal {
   opacity: 1;
   transform: translateY(0);
-  transition: 3s;
+  transition: 2.5s;
 }
 * .noreveal {
   opacity: 0;
@@ -710,5 +714,10 @@
   100% {
     transform: translateX(0);
     opacity: 1;
+  }
+}
+@media screen and (max-width: 1118px) {
+  * .show {
+    margin-top: 30px;
   }
 }/*# sourceMappingURL=marflix.css.map */
