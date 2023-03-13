@@ -9,7 +9,8 @@
   body {
     animation: 20s scroll;
     position: relative;
-    
+    background-color: rgb(225, 231, 237);
+
 
     .idk {
       margin-top: 0;
@@ -20,9 +21,9 @@
       margin-top: 0px;
       position: relative;
       transition: 6s;
-      background-image: url(/images/stylo.jpg) ;
+      background-image: url(/images/stylo.jpg);
 
-      
+
 
       nav {
         width: 90%;
@@ -47,12 +48,10 @@
 
 
           a {
-            background: linear-gradient(
-              to left,
-              white 35%,
-              aqua 50%,
-              white 70%
-            );
+            background: linear-gradient(to left,
+                white 35%,
+                aqua 50%,
+                white 70%);
             scroll-behavior: smooth;
             color: white;
             background-size: 200%;
@@ -142,33 +141,42 @@
 
         p.pres {
           font-size: 36px;
+
           .wave {
             animation: wave 2.5s infinite forwards;
             transform-origin: 70% 70%;
             display: inline-block;
             font-size: 38px;
+
             @keyframes wave {
               0% {
                 transform: rotate(0deg);
               }
+
               10% {
                 transform: rotate(14deg);
               }
+
               20% {
                 transform: rotate(-8deg);
               }
+
               20% {
                 transform: rotate(14deg);
               }
+
               40% {
                 transform: rotate(-4deg);
               }
+
               50% {
                 transform: rotate(10deg);
               }
+
               60% {
                 transform: rotate(0deg);
               }
+
               100% {
                 transform: rotate(0deg);
               }
@@ -177,7 +185,7 @@
         }
 
         p.nom {
-          margin-top: 25px;
+          margin-top: 22px;
 
           color: white;
           opacity: 0;
@@ -187,7 +195,7 @@
 
         p.met {
           font-size: 36px;
-          margin-top: 25px;
+          margin-top: 22px;
           animation: 5s slideLeft 2s ease forwards;
         }
 
@@ -195,26 +203,33 @@
           color: aqua;
           font-size: 54px;
         }
-        .con{
+
+        .con {
           margin-top: 20px;
+
           animation: slideTop 8s;
-          a{
+
+          a {
             margin-left: 10px;
             margin-right: 10px;
-            .li{
-              color:white;
-              width:30px;
+
+            .li {
+              color: white;
+              width: 30px;
               height: 30;
-              &:hover{
+
+              &:hover {
                 color: #108bc4;
               }
 
             }
-            .gi{
-              color:white;
-              width:30px;
+
+            .gi {
+              color: white;
+              width: 30px;
               height: 30px;
-              &:hover{
+
+              &:hover {
                 color: black;
               }
             }
@@ -258,7 +273,7 @@
     }
 
     .about {
-      height: 800px;
+      margin-bottom: 200px;
       background-color: rgb(225, 231, 237);
       padding-top: 250px;
 
@@ -267,8 +282,8 @@
         text-align: center;
         color: rgba($color: #403232, $alpha: 1);
       }
-      
-      
+
+
       .Cv {
         width: 100%;
         display: flex;
@@ -276,25 +291,30 @@
         padding-top: 20px;
 
         .contentcv {
-          width: 90%;
-          height: 600px;         
+          width: 100%;
+
           border-radius: 10px;
           text-align: center;
           display: flex;
           margin-top: 50px;
+
           .see {
             margin-top: 20px;
             width: 32%;
-            margin-left:3% ;
+            margin-left: 2%;
+            margin-right: 2%;
+
             img {
               width: 350px;
               border-radius: 220px;
               transition: all 1s;
-              &:hover{
-                scale : 1.1;
-               
+
+              &:hover {
+                scale: 1.1;
+
               }
             }
+
             a {
               button {
                 margin-top: 50px;
@@ -305,36 +325,41 @@
                 color: white;
                 border: #1db0dc;
                 transition: all 3s;
-  
+                cursor: pointer;
+
                 &:hover {
                   background: linear-gradient(to left, #1db0dc, #23d0d3);
                 }
               }
             }
           }
+
           .description {
-            width: 60%; 
+            width: 60%;
             border-radius: 10px;
             text-align: left;
             margin-top: 20px;
-            margin-left: 3%;
+            margin-left: 2%;
+            margin-right: 3%;
+
             h1 {
               font-size: 38px;
-              color : rgba($color: #3b3939, $alpha: 1);
+              color: rgba($color: #3b3939, $alpha: 1);
             }
+
             p {
               margin-top: 25px;
               font-size: 22px;
-              
+
             }
           }
-          
+
         }
       }
     }
 
     .techno {
-      height: 1100px;
+      margin-bottom: 300px;
       background-color: rgb(225, 231, 237);
       padding-top: 50px;
 
@@ -348,13 +373,13 @@
         text-align: center;
         font-size: 32px;
         margin-top: 25px;
-        color : rgba($color: #3b3939, $alpha: 1);
+        color: rgba($color: #3b3939, $alpha: 1);
       }
 
       h3 {
         text-align: center;
         margin-top: 20px;
-        color : rgba($color: #464343, $alpha: 1);
+        color: rgba($color: #464343, $alpha: 1);
       }
 
       .languages {
@@ -477,7 +502,7 @@
     }
 
     .proj {
-      height: 240vh;
+      margin-bottom: 100px;
       background-color: rgb(225, 231, 237);
       padding-top: 10px;
 
@@ -491,21 +516,25 @@
         font-size: 32px;
         text-align: center;
         margin-top: 40px;
-        color:rgba($color: #3b3939, $alpha: 1);
+        color: rgba($color: #3b3939, $alpha: 1);
       }
 
       .r {
         display: flex;
         justify-content: center;
-        margin-top: 50px;
+
+        flex-wrap: wrap;
+
 
         .show {
           display: flex;
           flex-direction: column;
           margin-left: 2%;
           margin-right: 2%;
-          &:hover{
-            scale:1.03;
+          margin-top: 50px;
+
+          &:hover {
+            scale: 1.03;
           }
 
           img {
@@ -516,7 +545,7 @@
             object-fit: fill;
             border: 2px solid aqua;
             border-bottom: 1px solid aqua;
-            
+
           }
 
           .demo {
@@ -539,6 +568,7 @@
               margin: 1em 1em 1em 1em;
               font-size: 1.2em;
               color: #23d0d3;
+
               span {
                 color: rgb(82, 254, 254)
               }
@@ -559,6 +589,7 @@
                   color: aqua;
                   font-size: 20px;
                 }
+
                 &::after {
                   content: "";
                   background: aqua;
@@ -570,9 +601,11 @@
                   transform: translateX(-50%);
                   transition: width 0.3s ease-in-out;
                 }
+
                 &:hover::after {
                   width: 70%;
                 }
+
                 p {
                   color: white;
                   margin: 0 1em 0 1em;
@@ -635,6 +668,11 @@
 
             a {
               text-decoration: none;
+              color: white;
+              display: flex;
+              align-items: center;
+              cursor: pointer;
+
 
               img {
                 &.linkedin {
@@ -652,6 +690,7 @@
                   width: 53px;
                   height: 53px;
                   transition: transform 1.2s;
+
                   &:hover {
                     scale: 1.2;
                     transform: rotate(360deg);
@@ -662,6 +701,7 @@
                   width: 50px;
                   height: 50px;
                   transition: transform 1.2s;
+
                   &:hover {
                     scale: 1.2;
                     transform: rotate(360deg);
@@ -699,19 +739,32 @@
       }
     }
   }
+
   .under {
-    text-decoration: underline aqua ;
-      
+    text-decoration: underline aqua;
+
   }
+
+  .t {
+    display: none;
+  }
+
+  .c {
+    display: inline;
+  }
+
+
   .reveal {
     opacity: 1;
     transform: translateY(0);
     transition: 3s;
   }
+
   .noreveal {
     opacity: 0;
     transform: translateY(100px);
   }
+
   @keyframes turn {
     from {
       transform: rotateY(0deg);
@@ -721,6 +774,7 @@
       transform: rotateY(360deg);
     }
   }
+
   @keyframes disabled {
     from {
       opacity: 0;
@@ -730,6 +784,7 @@
       opacity: 1;
     }
   }
+
   @keyframes slide {
     from {
       width: 0;
@@ -739,19 +794,23 @@
       width: 45%;
     }
   }
+
   @keyframes shine {
     to {
       background-position: 150%;
     }
   }
+
   @keyframes slideBottom {
     from {
       transform: translateY(-100px);
     }
+
     to {
       transform: translateY(0);
     }
   }
+
   @keyframes scroll {
     from {
       overflow: hidden;
@@ -761,6 +820,7 @@
       overflow: auto;
     }
   }
+
   @keyframes rotate {
     from {
       transform: rotateY(0deg);
@@ -770,36 +830,43 @@
       transform: rotateY(360deg);
     }
   }
+
   @keyframes shine2 {
     to {
       background-position: 150%;
     }
   }
+
   @keyframes slideTop {
     0% {
       transform: translateY(100px);
       opacity: 0;
     }
+
     100% {
       transform: translateY(0);
       opacity: 1;
     }
   }
+
   @keyframes slideRight {
     0% {
       transform: translateX(-150px);
       opacity: 0;
     }
+
     100% {
       transform: translateX(0);
       opacity: 1;
     }
   }
+
   @keyframes slideLeft {
     0% {
       transform: translateX(150px);
       opacity: 0;
     }
+
     100% {
       transform: translateX(0);
       opacity: 1;

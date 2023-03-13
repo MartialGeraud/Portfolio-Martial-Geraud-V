@@ -8,6 +8,7 @@
 * body {
   animation: 20s scroll;
   position: relative;
+  background-color: rgb(225, 231, 237);
 }
 * body .idk {
   margin-top: 0;
@@ -155,7 +156,7 @@
   }
 }
 * body .idk .present p.nom {
-  margin-top: 25px;
+  margin-top: 22px;
   color: white;
   opacity: 0;
   font-size: 36px;
@@ -163,7 +164,7 @@
 }
 * body .idk .present p.met {
   font-size: 36px;
-  margin-top: 25px;
+  margin-top: 22px;
   animation: 5s slideLeft 2s ease forwards;
 }
 * body .idk .present span {
@@ -225,7 +226,7 @@
   animation-fill-mode: forwards;
 }
 * body .about {
-  height: 800px;
+  margin-bottom: 200px;
   background-color: rgb(225, 231, 237);
   padding-top: 250px;
 }
@@ -241,8 +242,7 @@
   padding-top: 20px;
 }
 * body .about .Cv .contentcv {
-  width: 90%;
-  height: 600px;
+  width: 100%;
   border-radius: 10px;
   text-align: center;
   display: flex;
@@ -251,7 +251,8 @@
 * body .about .Cv .contentcv .see {
   margin-top: 20px;
   width: 32%;
-  margin-left: 3%;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 * body .about .Cv .contentcv .see img {
   width: 350px;
@@ -270,6 +271,7 @@
   color: white;
   border: #1db0dc;
   transition: all 3s;
+  cursor: pointer;
 }
 * body .about .Cv .contentcv .see a button:hover {
   background: linear-gradient(to left, #1db0dc, #23d0d3);
@@ -279,7 +281,8 @@
   border-radius: 10px;
   text-align: left;
   margin-top: 20px;
-  margin-left: 3%;
+  margin-left: 2%;
+  margin-right: 3%;
 }
 * body .about .Cv .contentcv .description h1 {
   font-size: 38px;
@@ -290,7 +293,7 @@
   font-size: 22px;
 }
 * body .techno {
-  height: 1100px;
+  margin-bottom: 300px;
   background-color: rgb(225, 231, 237);
   padding-top: 50px;
 }
@@ -406,7 +409,7 @@
   background-color: rgb(231, 171, 171);
 }
 * body .proj {
-  height: 240vh;
+  margin-bottom: 100px;
   background-color: rgb(225, 231, 237);
   padding-top: 10px;
 }
@@ -424,13 +427,14 @@
 * body .proj .r {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  flex-wrap: wrap;
 }
 * body .proj .r .show {
   display: flex;
   flex-direction: column;
   margin-left: 2%;
   margin-right: 2%;
+  margin-top: 50px;
 }
 * body .proj .r .show:hover {
   scale: 1.03;
@@ -548,6 +552,10 @@
 }
 * body .contact .logoc ul li a {
   text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 * body .contact .logoc ul li a img.linkedin {
   width: 50px;
@@ -600,6 +608,12 @@
 * .under {
   -webkit-text-decoration: underline aqua;
           text-decoration: underline aqua;
+}
+* .t {
+  display: none;
+}
+* .c {
+  display: inline;
 }
 * .reveal {
   opacity: 1;
