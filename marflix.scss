@@ -11,7 +11,6 @@
     position: relative;
     background-color: rgb(225, 231, 237);
 
-
     .idk {
       margin-top: 0;
       height: 100vh;
@@ -21,8 +20,6 @@
       position: relative;
       transition: 6s;
       background-image: url(/images/stylo.jpg);
-
-
 
       nav {
         width: 90%;
@@ -45,12 +42,13 @@
           animation-delay: 1.5s;
           opacity: 0;
 
-
           a {
-            background: linear-gradient(to left,
-                white 35%,
-                aqua 50%,
-                white 70%);
+            background: linear-gradient(
+              to left,
+              white 35%,
+              aqua 50%,
+              white 70%
+            );
             scroll-behavior: smooth;
             color: white;
             background-size: 200%;
@@ -65,7 +63,6 @@
 
             &:hover {
               font-size: 38px;
-
             }
           }
         }
@@ -85,10 +82,8 @@
             opacity: 0;
 
             .item {
-
               flex-direction: wrap;
             }
-
 
             a {
               font-size: 22px;
@@ -126,9 +121,7 @@
           .burgeur {
             display: none;
             animation: slideLeft 3s ease forwards;
-
           }
-
         }
       }
 
@@ -235,7 +228,6 @@
               &:hover {
                 color: #108bc4;
               }
-
             }
 
             .gi {
@@ -259,8 +251,6 @@
         animation-delay: 1.5s;
         animation-fill-mode: forwards;
         opacity: 0;
-
-
       }
 
       .bas {
@@ -298,12 +288,10 @@
         color: rgba($color: #403232, $alpha: 1);
       }
 
-
       .Cv {
         width: 100%;
         display: flex;
         justify-content: center;
-
 
         padding-top: 20px;
 
@@ -329,7 +317,6 @@
 
               &:hover {
                 scale: 1.1;
-
               }
             }
 
@@ -372,10 +359,8 @@
             p {
               margin-top: 25px;
               font-size: 22px;
-
             }
           }
-
         }
       }
     }
@@ -547,7 +532,6 @@
 
         flex-wrap: wrap;
 
-
         .show {
           display: flex;
           flex-direction: column;
@@ -568,7 +552,6 @@
             object-fit: fill;
             border: 2px solid aqua;
             border-bottom: 1px solid aqua;
-
           }
 
           .demo {
@@ -593,7 +576,7 @@
               color: #23d0d3;
 
               span {
-                color: rgb(82, 254, 254)
+                color: rgb(82, 254, 254);
               }
             }
 
@@ -610,7 +593,7 @@
 
                 &:hover {
                   color: aqua;
-                  font-size: 20px;
+                  font-size: 18px;
                 }
 
                 &::after {
@@ -696,7 +679,6 @@
               align-items: center;
               cursor: pointer;
 
-
               img {
                 &.linkedin {
                   width: 50px;
@@ -765,7 +747,6 @@
 
   .under {
     text-decoration: underline aqua;
-
   }
 
   .t {
@@ -907,7 +888,6 @@
 }
 
 @media screen and (max-width: 1118px) {
-
   .show {
     margin-top: 40px !important;
   }
@@ -926,9 +906,7 @@
   }
 }
 
-
 @media screen and (max-width: 1040px) {
-
   p.met,
   p.nom {
     font-size: 32px !important;
@@ -946,13 +924,12 @@
 }
 
 @media screen and (max-width: 914px) {
-
   p.met,
   p.nom {
     font-size: 28px !important;
 
     span {
-      font-size: 38px !important
+      font-size: 38px !important;
     }
   }
 
@@ -961,7 +938,6 @@
 
     img {
       width: 320px;
-
     }
   }
 }
@@ -971,7 +947,7 @@
     font-size: 28px;
 
     .wave {
-      font-size: 28px
+      font-size: 28px;
     }
   }
 
@@ -980,7 +956,7 @@
     font-size: 22px !important;
 
     span {
-      font-size: 32px !important
+      font-size: 32px !important;
     }
   }
 
@@ -989,13 +965,11 @@
 
     img {
       width: 280px;
-
     }
   }
 
   .contentcv {
     flex-direction: column-reverse;
-    transition: 2s;
   }
 
   .description {
@@ -1012,7 +986,7 @@
   }
 }
 
-@media screen and (max-width: 825px) {
+@media screen and (max-width: 800px) {
   #top {
     ul {
       margin: 16px 3% auto 0;
@@ -1022,10 +996,10 @@
         padding: 0;
 
         a {
-          font-size: 18px !important;
+          font-size: 22px !important;
 
           &:hover {
-            font-size: 24px !important;
+            font-size: 28px !important;
           }
         }
       }
@@ -1033,9 +1007,9 @@
       .item {
         display: none;
         flex-direction: column;
-        animation: slideBottom2 1s !important;
+        animation: slideBottom2 0.5s !important;
         opacity: 1;
-        padding-top: 5px;
+        padding-top: 10px;
         z-index: 3;
       }
 
@@ -1048,5 +1022,103 @@
 
   nav {
     overflow: visible !important;
+  }
+}
+@media screen and (max-width: 710px) {
+  .bitmojie {
+    img {
+      width: 220px;
+      height: 250px;
+    }
+  }
+  p.pres {
+    font-size: 28px !important;
+
+    .wave {
+      font-size: 28px !important;
+    }
+  }
+  p.met,
+  p.nom {
+    span {
+      font-size: 28px !important;
+    }
+  }
+}
+@media screen and (max-width: 610px) {
+  p.met,
+  p.nom {
+    font-size: 18px !important;
+    span {
+      font-size: 22px !important;
+    }
+  }
+  p.pres {
+    font-size: 24px !important;
+
+    .wave {
+      font-size: 24px !important;
+    }
+  }
+  .bitmojie {
+    top: 40vh !important;
+    img {
+      width: 200px;
+      height: 220px;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .bitmojie {
+    img {
+      width: 180px;
+      
+    }
+  }
+  p.met,
+  p.nom {
+    font-size: 16px !important;
+    span {
+      font-size: 18px !important;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .bitmojie {
+    left: 55% !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  .bitmojie {
+    left: 55% !important;
+  }
+}
+@media screen and (max-width: 410px) {
+  .bitmojie {
+    left: 52% !important;
+  }
+  .present{
+    left: 4% !important;
+  }
+}
+@media screen and (max-width: 380px) {
+  .bitmojie {
+    left: 50% !important;
+    top: 45vh !important;
+    img{
+      width: 150px;
+      height: 170px;
+      
+    }
+  }
+  .present{
+    left: 2% !important;
+  }
+  .see {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    img{
+      width: 320px !important;
+    }
   }
 }

@@ -496,7 +496,7 @@
 }
 * body .proj .r .show .demo .link a:hover {
   color: aqua;
-  font-size: 20px;
+  font-size: 18px;
 }
 * body .proj .r .show .demo .link a::after {
   content: "";
@@ -796,7 +796,6 @@
   }
   .contentcv {
     flex-direction: column-reverse;
-    transition: 2s;
   }
   .description {
     text-align: center !important;
@@ -809,7 +808,7 @@
     margin-bottom: 150px !important;
   }
 }
-@media screen and (max-width: 825px) {
+@media screen and (max-width: 800px) {
   #top ul {
     margin: 16px 3% auto 0;
     text-align: right;
@@ -818,17 +817,17 @@
     padding: 0;
   }
   #top ul li a {
-    font-size: 18px !important;
+    font-size: 22px !important;
   }
   #top ul li a:hover {
-    font-size: 24px !important;
+    font-size: 28px !important;
   }
   #top ul .item {
     display: none;
     flex-direction: column;
-    animation: slideBottom2 1s !important;
+    animation: slideBottom2 0.5s !important;
     opacity: 1;
-    padding-top: 5px;
+    padding-top: 10px;
     z-index: 3;
   }
   #top ul .burgeur {
@@ -837,5 +836,95 @@
   }
   nav {
     overflow: visible !important;
+  }
+}
+@media screen and (max-width: 710px) {
+  .bitmojie img {
+    width: 220px;
+    height: 250px;
+  }
+  p.pres {
+    font-size: 28px !important;
+  }
+  p.pres .wave {
+    font-size: 28px !important;
+  }
+  p.met span,
+  p.nom span {
+    font-size: 28px !important;
+  }
+}
+@media screen and (max-width: 610px) {
+  p.met,
+  p.nom {
+    font-size: 18px !important;
+  }
+  p.met span,
+  p.nom span {
+    font-size: 22px !important;
+  }
+  p.pres {
+    font-size: 24px !important;
+  }
+  p.pres .wave {
+    font-size: 24px !important;
+  }
+  .bitmojie {
+    top: 40vh !important;
+  }
+  .bitmojie img {
+    width: 200px;
+    height: 220px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .bitmojie img {
+    width: 180px;
+  }
+  p.met,
+  p.nom {
+    font-size: 16px !important;
+  }
+  p.met span,
+  p.nom span {
+    font-size: 18px !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  .bitmojie {
+    left: 55% !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  .bitmojie {
+    left: 55% !important;
+  }
+}
+@media screen and (max-width: 410px) {
+  .bitmojie {
+    left: 52% !important;
+  }
+  .present {
+    left: 4% !important;
+  }
+}
+@media screen and (max-width: 380px) {
+  .bitmojie {
+    left: 50% !important;
+    top: 45vh !important;
+  }
+  .bitmojie img {
+    width: 150px;
+    height: 170px;
+  }
+  .present {
+    left: 2% !important;
+  }
+  .see {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+  .see img {
+    width: 320px !important;
   }
 }/*# sourceMappingURL=marflix.css.map */

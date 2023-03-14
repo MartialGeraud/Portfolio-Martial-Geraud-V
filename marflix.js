@@ -114,7 +114,7 @@ burgeur.addEventListener("click", () => {
 
 const nav = document.querySelector("nav")
 
-window.addEventListener("resize", () => {
+window.addEventListener("change", () => {
     console.log("test");
     const li = document.querySelectorAll(".item");
     li.forEach(item => {
