@@ -74,11 +74,8 @@ function changeBack() {
 setInterval(changeBack, 15000);
 
 const tel = document.querySelector("#num");
-let mail = document.querySelector("#mail");
-console.log(tel);
-
+const mail = document.querySelector("#mail");
 count = 0;
-
 tel.addEventListener("click", () => {
     const telo = "07-87-47-39-11";
     const span = document.querySelector('.t');
@@ -90,8 +87,6 @@ tel.addEventListener("click", () => {
     }
 
 });
-
-
 mail.addEventListener('click', () => {
     const mail = "martial.geraud@gmail.com";
     const span = document.querySelector('.m');
@@ -102,5 +97,34 @@ mail.addEventListener('click', () => {
         span.style.display = "none";
     }
 });
+
+const burgeur = document.querySelector(".burgeur");
+
+burgeur.addEventListener("click", () => {
+    const li = document.querySelectorAll(".item");
+    li.forEach(item => {
+        if (item.style.display == "list-item") {
+            item.style.display = "none"
+        } else {
+
+            item.style.display = "list-item"
+        }
+    });
+});
+
+const nav = document.querySelector("nav")
+
+window.addEventListener("resize", () => {
+    console.log("test");
+    const li = document.querySelectorAll(".item");
+    li.forEach(item => {
+        if (window.innerWidth > 826) {
+            item.style.display = "inline-block";
+        } else {
+            item.style.display = "none";
+        }
+    })
+
+})
 
 

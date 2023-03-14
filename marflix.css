@@ -15,7 +15,6 @@
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
   margin-top: 0px;
   position: relative;
   transition: 6s;
@@ -61,7 +60,8 @@
   font-size: 38px;
 }
 * body .idk nav ul {
-  margin-right: 3%;
+  margin-right: 0 3% 0 0;
+  text-align: left;
   cursor: default;
 }
 * body .idk nav ul li {
@@ -71,6 +71,9 @@
   animation: slideTop 2s ease forwards;
   animation-delay: calc(0.4s * var(--i));
   opacity: 0;
+}
+* body .idk nav ul li .item {
+  flex-direction: wrap;
 }
 * body .idk nav ul li a {
   font-size: 22px;
@@ -100,6 +103,10 @@
 * body .idk nav ul li a:hover::after {
   width: 100%;
 }
+* body .idk nav ul .burgeur {
+  display: none;
+  animation: slideLeft 3s ease forwards;
+}
 * body .idk .present {
   color: white;
   position: absolute;
@@ -108,9 +115,7 @@
   background-color: rgba(94, 90, 90, 0.6);
   width: 45%;
   text-align: center;
-  padding-top: 30px;
   border-radius: 4px;
-  height: 290px;
   animation: slideRight 2s;
   overflow: hidden;
 }
@@ -119,9 +124,11 @@
   animation-delay: 1.5s;
   animation-fill-mode: forwards;
   opacity: 0;
+  transition: 1s;
 }
 * body .idk .present p.pres {
   font-size: 36px;
+  margin-top: 22px;
 }
 * body .idk .present p.pres .wave {
   animation: wave 2.5s infinite forwards;
@@ -173,6 +180,7 @@
 }
 * body .idk .present .con {
   margin-top: 20px;
+  margin-bottom: 22px;
   animation: slideTop 8s;
 }
 * body .idk .present .con a {
@@ -199,7 +207,6 @@
   position: absolute;
   top: 32vh;
   left: 60%;
-  width: 30%;
   animation: disabled 3s;
   animation-delay: 1.5s;
   animation-fill-mode: forwards;
@@ -447,7 +454,7 @@
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   height: 22vh;
-  width: 325px;
+  width: 315px;
   -o-object-fit: fill;
      object-fit: fill;
   border: 2px solid aqua;
@@ -457,7 +464,7 @@
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   height: 250px;
-  width: 325px;
+  width: 315px;
   background-color: #3b3939;
   border: 2px solid aqua;
   border-top: none;
@@ -665,6 +672,14 @@
     transform: translateY(0);
   }
 }
+@keyframes slideBottom2 {
+  from {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
 @keyframes scroll {
   from {
     overflow: hidden;
@@ -716,8 +731,111 @@
     opacity: 1;
   }
 }
+
 @media screen and (max-width: 1118px) {
-  * .show {
-    margin-top: 30px;
+  .show {
+    margin-top: 40px !important;
+  }
+  .description p {
+    font-size: 18px !important;
+  }
+  p.met span,
+  p.nom span {
+    font-size: 48px !important;
+  }
+}
+@media screen and (max-width: 1040px) {
+  p.met,
+  p.nom {
+    font-size: 32px !important;
+  }
+  p.met span,
+  p.nom span {
+    font-size: 42px !important;
+  }
+  .bitmojie img {
+    width: 360px;
+  }
+}
+@media screen and (max-width: 914px) {
+  p.met,
+  p.nom {
+    font-size: 28px !important;
+  }
+  p.met span,
+  p.nom span {
+    font-size: 38px !important;
+  }
+  .bitmojie {
+    top: 35vh !important;
+  }
+  .bitmojie img {
+    width: 320px;
+  }
+}
+@media screen and (max-width: 825px) {
+  p.pres {
+    font-size: 28px;
+  }
+  p.pres .wave {
+    font-size: 28px;
+  }
+  p.met,
+  p.nom {
+    font-size: 22px !important;
+  }
+  p.met span,
+  p.nom span {
+    font-size: 32px !important;
+  }
+  .bitmojie {
+    top: 38vh !important;
+  }
+  .bitmojie img {
+    width: 280px;
+  }
+  .contentcv {
+    flex-direction: column-reverse;
+    transition: 2s;
+  }
+  .description {
+    text-align: center !important;
+    align-self: center;
+  }
+  .see {
+    margin-top: 40px !important;
+  }
+  .about {
+    margin-bottom: 150px !important;
+  }
+}
+@media screen and (max-width: 825px) {
+  #top ul {
+    margin: 16px 3% auto 0;
+    text-align: right;
+  }
+  #top ul li {
+    padding: 0;
+  }
+  #top ul li a {
+    font-size: 18px !important;
+  }
+  #top ul li a:hover {
+    font-size: 24px !important;
+  }
+  #top ul .item {
+    display: none;
+    flex-direction: column;
+    animation: slideBottom2 1s !important;
+    opacity: 1;
+    padding-top: 5px;
+    z-index: 3;
+  }
+  #top ul .burgeur {
+    display: list-item;
+    padding-bottom: 15px;
+  }
+  nav {
+    overflow: visible !important;
   }
 }/*# sourceMappingURL=marflix.css.map */
