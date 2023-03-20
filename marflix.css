@@ -68,7 +68,7 @@
   list-style-type: none;
   display: inline-block;
   padding: 10px;
-  animation: slideTop 2s ease forwards;
+  animation: slideTop 1.5s ease forwards;
   animation-delay: calc(0.4s * var(--i));
   opacity: 0;
 }
@@ -105,7 +105,7 @@
 }
 * body .idk nav ul .burgeur {
   display: none;
-  animation: slideLeft 3s ease forwards;
+  animation: slideLeft 2s ease forwards;
 }
 * body .idk .present {
   color: white;
@@ -131,7 +131,7 @@
   margin-top: 22px;
 }
 * body .idk .present p.pres .wave {
-  animation: wave 2.5s infinite forwards;
+  animation: wave 2s infinite forwards;
   transform-origin: 70% 70%;
   display: inline-block;
   font-size: 38px;
@@ -167,12 +167,12 @@
   color: white;
   opacity: 0;
   font-size: 36px;
-  animation: 5s slideRight 2s ease forwards;
+  animation: 4s slideRight 2s ease forwards;
 }
 * body .idk .present p.met {
   font-size: 36px;
   margin-top: 22px;
-  animation: 5s slideLeft 2s ease forwards;
+  animation: 4s slideLeft 2s ease forwards;
 }
 * body .idk .present span {
   color: aqua;
@@ -629,7 +629,7 @@
 * .reveal {
   opacity: 1;
   transform: translateY(0);
-  transition: 2.5s;
+  transition: 2s;
 }
 * .noreveal {
   opacity: 0;

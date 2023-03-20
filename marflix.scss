@@ -77,7 +77,7 @@
             list-style-type: none;
             display: inline-block;
             padding: 10px;
-            animation: slideTop 2s ease forwards;
+            animation: slideTop 1.5s ease forwards;
             animation-delay: calc(0.4s * var(--i));
             opacity: 0;
 
@@ -120,7 +120,7 @@
 
           .burgeur {
             display: none;
-            animation: slideLeft 3s ease forwards;
+            animation: slideLeft 2s ease forwards;
           }
         }
       }
@@ -150,7 +150,7 @@
           margin-top: 22px;
 
           .wave {
-            animation: wave 2.5s infinite forwards;
+            animation: wave 2s infinite forwards;
             transform-origin: 70% 70%;
             display: inline-block;
             font-size: 38px;
@@ -197,13 +197,13 @@
           color: white;
           opacity: 0;
           font-size: 36px;
-          animation: 5s slideRight 2s ease forwards;
+          animation: 4s slideRight 2s ease forwards;
         }
 
         p.met {
           font-size: 36px;
           margin-top: 22px;
-          animation: 5s slideLeft 2s ease forwards;
+          animation: 4s slideLeft 2s ease forwards;
         }
 
         span {
@@ -548,7 +548,6 @@
             border-top-right-radius: 5px;
             height: 22vh;
             width: 315px;
-
             object-fit: fill;
             border: 2px solid aqua;
             border-bottom: 1px solid aqua;
@@ -760,7 +759,7 @@
   .reveal {
     opacity: 1;
     transform: translateY(0);
-    transition: 2.5s;
+    transition: 2s;
   }
 
   .noreveal {
