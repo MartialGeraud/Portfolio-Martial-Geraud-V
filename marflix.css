@@ -29,6 +29,7 @@
   top: 2vh;
   position: absolute;
   padding: 5px;
+  padding-right: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -60,7 +61,7 @@
   font-size: 38px;
 }
 * body .idk nav ul {
-  margin-right: 0 3% 0 0;
+  margin-right: 0 4% 0 0;
   text-align: left;
   cursor: default;
 }
@@ -68,7 +69,7 @@
   list-style-type: none;
   display: inline-block;
   padding: 10px;
-  animation: slideTop 1.5s ease forwards;
+  animation: slideTop 1s ease forwards;
   animation-delay: calc(0.4s * var(--i));
   opacity: 0;
 }
@@ -825,7 +826,7 @@
   #top ul .item {
     display: none;
     flex-direction: column;
-    animation: slideBottom2 0.5s !important;
+    animation: slideBottom2 0.1s !important;
     opacity: 1;
     padding-top: 10px;
     z-index: 3;
