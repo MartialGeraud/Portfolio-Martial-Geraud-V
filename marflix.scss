@@ -7,7 +7,7 @@
   scroll-behavior: smooth;
 
   body {
-    animation: 20s scroll;
+    animation: 12s scroll;
     position: relative;
     background-color: rgb(225, 231, 237);
 
@@ -194,7 +194,6 @@
 
         p.nom {
           margin-top: 22px;
-
           color: white;
           opacity: 0;
           font-size: 36px;
@@ -215,7 +214,7 @@
         .con {
           margin-top: 20px;
           margin-bottom: 22px;
-          animation: slideTop 8s;
+          animation: slideTop 5s;
 
           a {
             margin-left: 10px;
@@ -398,7 +397,7 @@
 
         .element {
           background-color: white;
-          width: 180px;
+          width: 200px;
           display: flex;
           align-items: center;
           height: 40px;
@@ -436,11 +435,7 @@
             }
           }
         }
-
-        .diff {
-          width: 200px;
-        }
-
+     
         .yellow {
           background-color: rgb(255, 255, 43);
         }
