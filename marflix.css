@@ -6,7 +6,7 @@
   scroll-behavior: smooth;
 }
 * body {
-  animation: 20s scroll;
+  animation: 12s scroll;
   position: relative;
   background-color: rgb(225, 231, 237);
 }
@@ -182,7 +182,7 @@
 * body .idk .present .con {
   margin-top: 20px;
   margin-bottom: 22px;
-  animation: slideTop 8s;
+  animation: slideTop 5s;
 }
 * body .idk .present .con a {
   margin-left: 10px;
@@ -333,7 +333,7 @@
 }
 * body .techno .languages .element {
   background-color: white;
-  width: 180px;
+  width: 200px;
   display: flex;
   align-items: center;
   height: 40px;
@@ -365,9 +365,6 @@
 }
 * body .techno .languages .element .explain p {
   margin: 10px;
-}
-* body .techno .languages .diff {
-  width: 200px;
 }
 * body .techno .languages .yellow {
   background-color: rgb(255, 255, 43);
