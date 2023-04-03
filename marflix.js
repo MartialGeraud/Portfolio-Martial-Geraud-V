@@ -112,7 +112,8 @@ burgeur.addEventListener("click", () => {
     });
 });
 
-
+var maxWidth = 1920;
+var maxHeight = 2000;
 window.addEventListener("resize", () => {  
     const li = document.querySelectorAll(".item");
     li.forEach(item => {
@@ -123,6 +124,19 @@ window.addEventListener("resize", () => {
         }
     })
 
+    if(window.innerWidth > maxWidth) {
+        Window.resizeTo(maxWidth, window.innerHeight);
+    }
+    if(window.innerHeight > maxHeight) {
+        Window.resizeTo(window.innerWidth, maxHeight);
+    }
+
 })
+if(window.innerWidth > maxWidth) {
+    Window.resizeTo(maxWidth, window.innerHeight);
+}
+if(window.innerHeight > maxHeight) {
+    Window.resizeTo(window.innerWidth, maxHeight);
+}
 
 
